@@ -1,7 +1,7 @@
 _first = true
 class LinkManager extends BaseObject
 
-	constructor: (@history = [], @routes = []) -> window.addEventListener "popstate", ( (e) => if _first then return _first = false; do @checkRoute); @echo "LinkManager Activated!"
+	constructor: (@history = [], @routes = []) -> window.addEventListener "popstate", ( (e) => if _first then return _first = false; else do @checkRoute); @echo "LinkManager Activated!"
 	setRoutes: (routePatterns) =>
 		for route, handler of routePatterns
 			@routes.push route: route, handler: handler
