@@ -1,1 +1,4 @@
-BOO
+<a href="/index"> lala </a>
+<form><input type='text'  placeholder='Introdu numele tău'/>
+<input type='submit' value='Trimite'>
+</form>

@@ -26,7 +26,7 @@ if (args.version) {
 	}
 	if (args.static) {
 		var data = {};
-		data.address = args.address || process.env.IP || "localhost"
+		data.address = args.address || process.env.IP || "0.0.0.0"
 		data.port    = args.port || process.env.PORT || "8080"
 
 		var Static = require("./server/static"),

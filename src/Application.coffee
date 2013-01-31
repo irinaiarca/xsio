@@ -15,18 +15,20 @@ class Application extends BaseObject
 
 		# Fonts
 		DepMan.googleFont "Electrolize", [400]
-		DepMan.googleFont "Droid Sans", [400]
+		DepMan.googleFont "Open Sans", [400], ["latin", "latin-ext"]
+		DepMan.googleFont "Just Me Again Down Here", [400]
 
 		# Routes
 		items = [
 			{link: "/login"}
 			{link: "/help"}
+			{link: "/bonus"}
+			{link: "/about"}
+			{link: "/index"}
 		]
 
 		routes =
 			"/": -> document.body.innerHTML = DepMan.render "login"
-
-		document.body.innerHTML = DepMan.render "index"
 
 		renderDoc = (doc) ->
 			document.querySelector("body").innerHTML = DepMan.render doc
