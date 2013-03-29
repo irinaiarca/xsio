@@ -1,3 +1,13 @@
+class Enum 
+	constructor: (items, offset = 0) -> @[item] = key + offset for item, key in items
+
+RESULTS = new Enum([
+	"O"
+	"Inconclusive"
+	"X"
+	"Draw"
+], -1)
+
 class Runner extends BaseObject
 
 	constructor: (@character) -> do @play
@@ -9,35 +19,34 @@ class Runner extends BaseObject
 		x.model.done = (cine1) =>
 				do y.detach
 				console.log "Level 1, result : #{cine1}"
-				if cine1 is 2 then do @draw
-				else 
+				document.body.innerHTML = "<section></section>"
+				x = new (DepMan.controller "Tabla")()
+				y = new (DepMan.helper "AI")(x, @character)
+				y.handle 1 if @character is RESULTS.O
+				x.model.done = (cine2) =>
+					do y.detach
+					console.log "Level 2, results : #{cine1}, #{cine2}"
 					document.body.innerHTML = "<section></section>"
-					x = new (DepMan.controller "Tabla")()
-					y = new (DepMan.helper "AI")(x, @character)
-					y.handle 1 if @character is -1
-					x.model.done = (cine2) =>
-						do y.detach
-						console.log "Level 2, results : #{cine1}, #{cine2}"
+					if cine1 is cine2 
+						if cine1 is @character then do @win
+						else if cine1 is RESULTS.Draw then do @draw
+						else do @lose
+					else
 						document.body.innerHTML = "<section></section>"
-						if cine2 is 2 then do @draw
-						else if cine1 is cine2 
-							if cine1 is @character then do @win
-							else do @lose
-						else
-							document.body.innerHTML = "<section></section>"
-							x = new (DepMan.controller "Tabla")()
-							y = new (DepMan.helper "AI")(x, @character)
-							y.handle 1 if @character is -1
-							x.model.done = (cine3) =>
-								do y.detach
-								console.log "Level 3, result : #{cine3}"
-								if cine3 is 2 then do @draw
-								else if cine1 is cine3 
-									if cine3 is @character then do @win
-									else do @lose
-								else if cine2 is cine3
-									if cine3 is @character the do @win
-									else do @lose
+						x = new (DepMan.controller "Tabla")()
+						y = new (DepMan.helper "AI")(x, @character)
+						y.handle 1 if @character is RESULTS.O
+						x.model.done = (cine3) =>
+							do y.detach
+							console.log "Level 3, result : #{cine3}"
+							if cine3 is RESULTS.Draw then do @draw
+							else if cine1 is cine3 
+								if cine3 is @character then do @win
+								else do @lose
+							else if cine2 is cine3
+								if cine3 is @character the do @win
+								else do @lose
+							else do @draw
 		@
 								
 	lose: => LinkManager.link "/story/#{do @which}/lose"

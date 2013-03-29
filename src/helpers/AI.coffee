@@ -1,5 +1,5 @@
 class AI extends BaseObject
-	constructor: (@controller, @player) -> console.log @controller; @id = @controller.subscribe "tick", @handle
+	constructor: (@controller, @player) -> console.log @controller; @id = @controller.subscribe "tick", @handle; @controller.AI = @
 	handle: (formerplayer) =>
 		table = @controller.model.table
 		return if @offline?
@@ -13,5 +13,6 @@ class AI extends BaseObject
 		@controller.tick {target: document.getElementById "spot#{AI}" }	
 		
 	detach: =>  @controller.unsubscribe "tick", @id
+	reset: (@player) => console.log @player
 
 module.exports = AI

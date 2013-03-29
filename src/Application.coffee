@@ -52,6 +52,7 @@ class Application extends BaseObject
 			"/": -> document.body.innerHTML = DepMan.render "login"; do _login
 			"/logout": -> localStorage.removeItem "login"; LinkManager.checkRoute "/"
 			"/2pgame": -> document.body.innerHTML = "<section></section>"; new (DepMan.controller "Tabla")(); do renderLogout
+			"/casual": -> document.body.innerHTML = "<section></section>"; x = new (DepMan.controller "Tabla")(); y = new (DepMan.helper "AI")(x, 1); do renderLogout
 			"/story/blue/game": -> document.body.innerHTML = "<section></section>"; new (DepMan.helper "Runner")(1); do renderLogout
 			"/story/pink/game": -> document.body.innerHTML = "<section></section>"; new (DepMan.helper "Runner")(-1); do renderLogout
 			

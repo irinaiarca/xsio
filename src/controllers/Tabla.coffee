@@ -39,8 +39,9 @@ class TableController extends BaseObject
 		if kind is 2 then alert "Egal!"
 		else alert "A câștigat #{do @player}"
 		for kid in @spots then kid.innerHTML = ""
-		@currentPlayer = -1
-		@_reset = true
+		@currentPlayer *= -1
+		@AI.reset @currentPlayer if @AI?
+		if @currentPlayer is -1 then @AI.handle -1
 		
 
 class TableControllerErrorReporter extends BaseObject
