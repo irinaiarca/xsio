@@ -1,2 +1,12 @@
-<a href="/index" id="back">Înapoi</a>
-<a href="/about" id="about">Despre</a>
+<%- gButton "/", "Înapoi", "back" %>
+
+<p>Jocul X si O pe hârtie este considerat cel mai vechi joc din istorie. Chiar dacă, în prezent oricine accesează un site cu jocuri 
+online poate juca X și O în acest format, nimic nu se compară cu adevăratele “campionate” de X și O din timpul orelor sau 
+cursurilor.<br></p>
+<p><b>Istorie</b><br></p>
+<p>Nu există foarte multe date istorice despre acest joc, dar se presupune că jocul X și O își are originile în Antichitate, fiind adesea jucat de către cetățenii Imperiului Roman in jurul 
+secolului I i.Hr. Pe atunci, jocul purta numele de ”Terni Lapilli” și principala diferență dintre acest joc și versiunea zilelor 
+noastră este faptul că jucătorii aveau la dispoziție numai câte trei piese pe care le puteau muta în spațiile libere. De asemenea, s-a 
+formulat și afirmația conform căreia jocul X și O își are originile în Egiptul antic. </p>
+<p>În anul 1952 apare prima versiune computerizată a acestui joc, versiune care poartă numele de ”OXO”.</p>
+

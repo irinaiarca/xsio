@@ -1,0 +1,2 @@
+{"ts":1359657730110,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<a href=\"/index\"> lala </a>\n<form><input type='text'  placeholder='Introdu numele tău'/>\n<input type='submit' value='Trimite'>\n</form>"]],"start1":0,"start2":0,"length1":0,"length2":134}]],"length":134}
+{"contributors":[],"silentsave":false,"ts":1359660132995,"patch":[[{"diffs":[[-1,"<a href=\"/index\"> lala </a>\n"],[0,"<for"]],"start1":0,"start2":0,"length1":32,"length2":4}]],"length":106,"saved":false}

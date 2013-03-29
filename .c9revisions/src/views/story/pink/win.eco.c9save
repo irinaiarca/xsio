@@ -1,0 +1,7 @@
+{"ts":1362318940041,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":["sabinmarcu@gmail.com"],"silentsave":false,"ts":1362318944380,"patch":[[{"diffs":[[1,"I WON"]],"start1":0,"start2":0,"length1":0,"length2":5}]],"length":5,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1364068136183,"patch":[[{"diffs":[[-1,"I WON"],[1,"<a href"]],"start1":0,"start2":0,"length1":5,"length2":7}]],"length":7,"saved":false}
+{"ts":1364068186123,"patch":[[{"diffs":[[0,"<a "],[-1,"href"],[1,"class=\"button fancyfont\" id=\"startjoc\" href=\"/index\">Ai câștigat!</a>"]],"start1":0,"start2":0,"length1":7,"length2":72}]],"length":72,"saved":false}
+{"ts":1364068468748,"patch":[[{"diffs":[[1,"<img src=\"http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/gamepinkwin_zps86cbb6d4.png\"></img>\n"],[0,"<a class"]],"start1":0,"start2":0,"length1":8,"length2":120}]],"length":184,"saved":false}
+{"ts":1364069625694,"patch":[[{"diffs":[[0,"<img"],[1," id=\"fin\""],[0," src=\"ht"]],"start1":0,"start2":0,"length1":12,"length2":21}]],"length":193,"saved":false}
+{"ts":1364070405610,"patch":[[{"diffs":[[0,"id=\""],[-1,"startjoc"],[1,"finbutton"],[0,"\" hr"]],"start1":149,"start2":149,"length1":16,"length2":17}]],"length":194,"saved":false}

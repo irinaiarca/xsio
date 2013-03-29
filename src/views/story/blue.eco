@@ -1,0 +1,5 @@
+<%- gButton "/story/choice", "Înapoi", "back" %>
+
+<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/bluestory_zps3f724d7e.png" id="tori"><img>
+
+<a class="button fancyfont" id="startjoc" href="/story/blue/game">Start</a>

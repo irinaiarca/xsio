@@ -1,0 +1,4 @@
+<%- gButton "/story/choice", "Înapoi", "back" %>
+
+<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pinkstory_zps7da3115e.png" id="tori"><img>
+<a class="button fancyfont" id="startjoc" href="/story/pink/game">Start</a>

@@ -29,10 +29,11 @@ class LinkManager extends BaseObject
 				if r[0] is ":" then args[r.substr 1] = l
 				else
 					if r isnt l then res = false
-
-			if res and loc.length is 0 then document.body.setAttribute("id", _baseLoc.substr 1); return routeSet.handler args
+			id = _baseLoc.substr 1
+			if id is "" then id = "index"
+			if res and loc.length is 0 then document.body.setAttribute("id", id); return routeSet.handler args
 			else continue
-		document.body.innerHTML = DepMan.render 404, title: "ATLAS", text: "404", reason: "This page either does not exist, or it is hidden.", message: """
+		document.body.innerHTML = DepMan.render 404, title: "Bullshit?", text: "404", reason: "This page either does not exist, or it is hidden.", message: """
 				Why would it be hidden? Well, monkeys are always rapaging through the labs, and sometimes want to play hide and seek with our pages.
 
 				That, or  you don't have permission to view those files.
@@ -43,8 +44,11 @@ class LinkManager extends BaseObject
 			
 	
 	link: (e) =>
-		el = @getParentAnchor e.srcElement
-		if @checkRoute(el.getAttribute "href") then history.pushState null, null, el.href
+		if e.substr? then link = e
+		else 
+			el = @getParentAnchor e.srcElement
+			link = el.getAttribute "href"
+		if @checkRoute(link) then history.pushState null, null, link
 		e.preventDefault()
 
 	getParentAnchor: (e) =>

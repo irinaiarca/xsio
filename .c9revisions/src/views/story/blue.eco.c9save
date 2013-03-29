@@ -1,0 +1,8 @@
+{"ts":1360783589242,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":["iarcairina@gmail.com"],"silentsave":false,"ts":1360784135156,"patch":[[{"diffs":[[1,"blue"]],"start1":0,"start2":0,"length1":0,"length2":4}]],"length":4,"saved":false}
+{"contributors":["iarcairina@gmail.com"],"silentsave":false,"ts":1360786498375,"patch":[[{"diffs":[[1,"<%- gButton \"/story/choice\", \"Înapoi\", \"back\" %>\n"],[0,"blue"]],"start1":0,"start2":0,"length1":4,"length2":53}]],"length":53,"saved":false}
+{"contributors":["iarcairina@gmail.com"],"silentsave":false,"ts":1360786569083,"patch":[[{"diffs":[[0,"ack\" %>\n"],[1,"\n"],[0,"blue"]],"start1":41,"start2":41,"length1":12,"length2":13}]],"length":54,"saved":false}
+{"contributors":["iarcairina@gmail.com"],"silentsave":false,"ts":1362318537106,"patch":[[{"diffs":[[0,"%>\n\nblue"],[1,"\n\n<a href=\"/story/blue/game\">Start</a>"]],"start1":46,"start2":46,"length1":8,"length2":46}]],"length":92,"saved":false}
+{"ts":1362318611250,"patch":[[{"diffs":[[0,"blue\n\n<a"],[1," class=\"button fancyfont\""],[0," href=\"/"]],"start1":50,"start2":50,"length1":16,"length2":41}]],"length":117,"saved":false}
+{"ts":1362319602992,"patch":[[{"diffs":[[0,"ncyfont\""],[1," id=\"startjoc\""],[0," href=\"/"]],"start1":75,"start2":75,"length1":16,"length2":30}]],"length":131,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1364046782383,"patch":[[{"diffs":[[0,"ck\" %>\n\n"],[-1,"blue"],[1,"<img src=\"http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/bluestory_zps3f724d7e.png\" id=\"tori\"><img>"],[0,"\n\n<a cla"]],"start1":42,"start2":42,"length1":20,"length2":134}]],"length":245,"saved":false}

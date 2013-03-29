@@ -1,0 +1,2 @@
+{"ts":1364501876132,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1364501978326,"patch":[[{"diffs":[[1,"class Enum\n\n\tconstructor: (items) ->\n\t\t@[item] = key for item, key in items\n\t\t\nmodule.exports = Enum"]],"start1":0,"start2":0,"length1":0,"length2":100}]],"length":100,"saved":false}

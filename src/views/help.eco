@@ -1,9 +1,44 @@
-<a href="/index" id="back">Înapoi</a>
-<p>
-Celebrul  X  și  O, sau  tic-tac-toe  este  un  joc  pentru  doi  jucători, ”X”  (reprezentat  de  bname)  și  ”O”  (reprezentat  de  gname).
-</p id="doi">
-<p> Iniţial, tabla  este  alcătuită  din  9  pătrăţele  goale, aliniate  într-o  tablă  de  3x3.
-</p>
-<p>
-Scopul  fiecărui  jucător  este  de  a  completa  un  rând, o  coloană, sau  o  diagonală, cu  semnul  propriu, înaintea  adversarului. Ambii  jucători,mută  alternativ    și, pentru  că  bname  este  ceva  mai  egoist, el  va  începe  întotdeauna  primul.
-</p>
+<%- gButton "/", "Înapoi", "back" %>
+
+<p>Celebrul X și O, sau tic-tac-toe 
+este un joc pentru doi jucători, 
+”X”, reprezentat de spiridușul 
+albastru, și ”O”, reprezentat de 
+spiridușul roz.<br></p>
+
+<p>Inițial, tabla de joc este 
+alcătuită din 9 pătrățele goale, 
+aliniate într-o tablă de 3x3.
+Scopul fiecărui jucător este de a 
+completa un rând, o coloană, sau 
+o diagonală, cu semnul propriu, 
+înaintea adversarului. Ambii 
+jucători mută alternativ și, 
+pentru că X este ceva mai egoist, 
+el va începe întotdeauna primul.<br></p>
+
+<p>Cele trei moduri de joc:<br></p>
+<ul>
+<p id="list"><li>Poveste: În funcție de 
+personajul ales, jocul se va 
+desfășura în jurul unei mici 
+povești, prezentate la începutul 
+jocului printr-o bandă desenată, 
+cu două finaluri posibile. Pentru 
+a vedea finalul fericit, 
+jucătorul trebuie să câștige cel 
+puțin două runde de joc din cele 
+trei.<br></p>
+
+<p id="list"><li>Joc ocazional: Acest mod 
+de joc seamănă puțin cu modul 
+”Poveste”, diferența fiind faptul 
+că nu mai există poveste, iar 
+jucătorul poate juca oricâte 
+runde dorește.<br></p>
+
+<p id="list"><li>Joc în doi: Aici 
+jucătorul poate juca împreună cu 
+un prieten, la același 
+calculator.</p>
+</ul>

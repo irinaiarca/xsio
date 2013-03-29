@@ -1,0 +1,3 @@
+<%- gButton "/", "Înapoi", "back" %>
+<a href="/story/pink"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pipp_zpscac1b701.png" onclick="" /class=choiceicon id=pipp></a>
+<a href="/story/blue"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/merty_zps947fdb5c.png" onclick="" /class=choiceicon></a>
