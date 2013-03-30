@@ -1081,6 +1081,13 @@ Dual licensed under the MIT and GPL licenses.
           new (DepMan.controller("Tabla"))();
           return renderLogout();
         },
+        "/casual": function() {
+          var x, y;
+          document.body.innerHTML = "<section></section>";
+          x = new (DepMan.controller("Tabla"))();
+          y = new (DepMan.helper("AI"))(x, 1);
+          return renderLogout();
+        },
         "/story/blue/game": function() {
           document.body.innerHTML = "<section></section>";
           new (DepMan.helper("Runner"))(1);
@@ -1237,16 +1244,16 @@ Dual licensed under the MIT and GPL licenses.
       try {
         this.model.tick(this.currentPlayer, e.target.id.replace("spot", ""));
         if (this._reset) {
-          this._reset = false;
+          return this._reset = false;
         } else {
           e.target.innerHTML = this.player();
+          this.currentPlayer *= -1;
+          return this.publish("tick", this.currentPlayer);
         }
-        this.currentPlayer *= -1;
-        return this.publish("tick", this.currentPlayer, this.model.table);
       } catch (e) {
         switch (e.errCode) {
           case 1:
-            return alert("Faci ceva dubios pe'aci!?");
+            return alert("Faci ceva dubios pe-aci!?");
           case 2:
             return alert("Ai dat deja aci");
         }
@@ -1272,6 +1279,7 @@ Dual licensed under the MIT and GPL licenses.
       if (kind == null) {
         kind = 0;
       }
+      console.log("RESETTING");
       if (kind === 2) {
         alert("Egal!");
       } else {
@@ -1282,7 +1290,10 @@ Dual licensed under the MIT and GPL licenses.
         kid = _ref[_i];
         kid.innerHTML = "";
       }
-      this.currentPlayer = -1;
+      this.currentPlayer *= -1;
+      if (this.AI != null) {
+        this.AI.reset(this.currentPlayer);
+      }
       return this._reset = true;
     };
 
@@ -1326,21 +1337,28 @@ Dual licensed under the MIT and GPL licenses.
     function AI(controller, player) {
       this.controller = controller;
       this.player = player;
+      this.reset = __bind(this.reset, this);
+
       this.detach = __bind(this.detach, this);
+
+      this.allBlank = __bind(this.allBlank, this);
 
       this.handle = __bind(this.handle, this);
 
       console.log(this.controller);
       this.id = this.controller.subscribe("tick", this.handle);
+      this.controller.AI = this;
+      this._stop = false;
     }
 
-    AI.prototype.handle = function(formerplayer) {
+    AI.prototype.handle = function(formerplayer, override) {
       var table;
-      table = this.controller.model.table;
-      if (this.offline != null) {
-        return;
+      if (override == null) {
+        override = false;
       }
-      if (formerplayer !== this.player * -1) {
+      table = this.controller.model.table;
+      console.log("OVERRIDE", override);
+      if ((formerplayer !== this.player * -1) && !override) {
         return;
       }
       console.log(formerplayer, this.player, table);
@@ -1354,8 +1372,28 @@ Dual licensed under the MIT and GPL licenses.
       });
     };
 
+    AI.prototype.allBlank = function(table) {
+      var item, ok, _i, _len;
+      ok = true;
+      for (_i = 0, _len = table.length; _i < _len; _i++) {
+        item = table[_i];
+        if (item !== 0) {
+          ok = false;
+        }
+      }
+      return ok;
+    };
+
     AI.prototype.detach = function() {
       return this.controller.unsubscribe("tick", this.id);
+    };
+
+    AI.prototype.reset = function(player) {
+      this.player = player;
+      if (this.player === -1) {
+        this.controller.currentPlayer = 1;
+        return this.handle(-1, true);
+      }
     };
 
     return AI;
@@ -1656,10 +1694,29 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call(this);
 }, "helpers/Runner": function(exports, require, module) {(function() {
-  var Runner,
+  var Enum, RESULTS, Runner,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Enum = (function() {
+
+    function Enum(items, offset) {
+      var item, key, _i, _len;
+      if (offset == null) {
+        offset = 0;
+      }
+      for (key = _i = 0, _len = items.length; _i < _len; key = ++_i) {
+        item = items[key];
+        this[item] = key + offset;
+      }
+    }
+
+    return Enum;
+
+  })();
+
+  RESULTS = new Enum(["O", "Inconclusive", "X", "Draw"], -1);
 
   Runner = (function(_super) {
 
@@ -1692,56 +1749,54 @@ Dual licensed under the MIT and GPL licenses.
       x.model.done = function(cine1) {
         y.detach();
         console.log("Level 1, result : " + cine1);
-        if (cine1 === 2) {
-          return _this.draw();
-        } else {
-          document.body.innerHTML = "<section></section>";
-          x = new (DepMan.controller("Tabla"))();
-          y = new (DepMan.helper("AI"))(x, _this.character);
-          if (_this.character === -1) {
-            y.handle(1);
-          }
-          return x.model.done = function(cine2) {
-            y.detach();
-            console.log("Level 2, results : " + cine1 + ", " + cine2);
-            document.body.innerHTML = "<section></section>";
-            if (cine2 === 2) {
-              return _this.draw();
-            } else if (cine1 === cine2) {
-              if (cine1 === _this.character) {
-                return _this.win();
-              } else {
-                return _this.lose();
-              }
-            } else {
-              document.body.innerHTML = "<section></section>";
-              x = new (DepMan.controller("Tabla"))();
-              y = new (DepMan.helper("AI"))(x, _this.character);
-              if (_this.character === -1) {
-                y.handle(1);
-              }
-              return x.model.done = function(cine3) {
-                y.detach();
-                console.log("Level 3, result : " + cine3);
-                if (cine3 === 2) {
-                  return _this.draw();
-                } else if (cine1 === cine3) {
-                  if (cine3 === _this.character) {
-                    return _this.win();
-                  } else {
-                    return _this.lose();
-                  }
-                } else if (cine2 === cine3) {
-                  if (cine3 === _this.character(the(_this.win()))) {
-
-                  } else {
-                    return _this.lose();
-                  }
-                }
-              };
-            }
-          };
+        document.body.innerHTML = "<section></section>";
+        x = new (DepMan.controller("Tabla"))();
+        y = new (DepMan.helper("AI"))(x, _this.character);
+        if (_this.character === RESULTS.O) {
+          y.handle(1);
         }
+        return x.model.done = function(cine2) {
+          y.detach();
+          console.log("Level 2, results : " + cine1 + ", " + cine2);
+          document.body.innerHTML = "<section></section>";
+          if (cine1 === cine2) {
+            if (cine1 === _this.character) {
+              return _this.win();
+            } else if (cine1 === RESULTS.Draw) {
+              return _this.draw();
+            } else {
+              return _this.lose();
+            }
+          } else {
+            document.body.innerHTML = "<section></section>";
+            x = new (DepMan.controller("Tabla"))();
+            y = new (DepMan.helper("AI"))(x, _this.character);
+            if (_this.character === RESULTS.O) {
+              y.handle(1);
+            }
+            return x.model.done = function(cine3) {
+              y.detach();
+              console.log("Level 3, result : " + cine3);
+              if (cine3 === RESULTS.Draw) {
+                return _this.draw();
+              } else if (cine1 === cine3) {
+                if (cine3 === _this.character) {
+                  return _this.win();
+                } else {
+                  return _this.lose();
+                }
+              } else if (cine2 === cine3) {
+                if (cine3 === _this.character(the(_this.win()))) {
+
+                } else {
+                  return _this.lose();
+                }
+              } else {
+                return _this.draw();
+              }
+            };
+          }
+        };
       };
       return this;
     };

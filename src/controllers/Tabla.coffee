@@ -20,12 +20,13 @@ class TableController extends BaseObject
 		try 
 			@model.tick @currentPlayer, e.target.id.replace "spot", ""
 			if @_reset then @_reset = false
-			else e.target.innerHTML = do @player
-			@currentPlayer *= -1
-			@publish "tick", @currentPlayer, @model.table
+			else 
+				e.target.innerHTML = do @player
+				@currentPlayer *= -1
+				@publish "tick", @currentPlayer
 		catch e
 			switch e.errCode
-				when 1 then alert "Faci ceva dubios pe'aci!?"
+				when 1 then alert "Faci ceva dubios pe-aci!?"
 				when 2 then alert "Ai dat deja aci"
 			
 	done: => @queue = []; @reset.apply @, arguments
@@ -36,12 +37,13 @@ class TableController extends BaseObject
 			when -1 then return "O"
 
 	reset: (kind = 0) => 
+		console.log "RESETTING"
 		if kind is 2 then alert "Egal!"
 		else alert "A câștigat #{do @player}"
 		for kid in @spots then kid.innerHTML = ""
 		@currentPlayer *= -1
 		@AI.reset @currentPlayer if @AI?
-		if @currentPlayer is -1 then @AI.handle -1
+		@_reset = true
 		
 
 class TableControllerErrorReporter extends BaseObject
