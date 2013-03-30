@@ -6,8 +6,8 @@ class TableController extends BaseObject
 		@queue = {}
 		@model = new (DepMan.model "Tabla")()
 		@model.done = @done
-		$("section").html DepMan.render "tabla"
-		@view = $("section table")
+		jQuery("section").html DepMan.render "tabla"
+		@view = jQuery("section table")
 		console.log @view
 		@spots = @view.find("td")
 		@currentPlayer = 1

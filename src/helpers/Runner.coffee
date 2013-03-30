@@ -17,14 +17,12 @@ class Runner extends BaseObject
 		y = new (DepMan.helper "AI")(x, @character)
 		y.handle 1 if @character is -1
 		x.model.done = (cine1) =>
-				do y.detach
 				console.log "Level 1, result : #{cine1}"
 				document.body.innerHTML = "<section></section>"
 				x = new (DepMan.controller "Tabla")()
 				y = new (DepMan.helper "AI")(x, @character)
 				y.handle 1 if @character is RESULTS.O
 				x.model.done = (cine2) =>
-					do y.detach
 					console.log "Level 2, results : #{cine1}, #{cine2}"
 					document.body.innerHTML = "<section></section>"
 					if cine1 is cine2 
@@ -37,7 +35,6 @@ class Runner extends BaseObject
 						y = new (DepMan.helper "AI")(x, @character)
 						y.handle 1 if @character is RESULTS.O
 						x.model.done = (cine3) =>
-							do y.detach
 							console.log "Level 3, result : #{cine3}"
 							if cine3 is RESULTS.Draw then do @draw
 							else if cine1 is cine3 
