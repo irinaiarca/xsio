@@ -14,3 +14,4 @@
 {"contributors":[],"silentsave":false,"ts":1361021815100,"patch":[[{"diffs":[[0,"] in [-1"],[-1,".."],[1,","],[0,"1] then "]],"start1":885,"start2":885,"length1":18,"length2":17}]],"length":1423,"saved":false}
 {"ts":1361021820029,"patch":[[{"diffs":[[0,"] in [-1"],[-1,","],[1,".."],[0,"1] then "]],"start1":885,"start2":885,"length1":17,"length2":18}]],"length":1424,"saved":false}
 {"ts":1361021885303,"patch":[[{"diffs":[[0,"tion[2]]"],[1," and @table[solution[0]] in [-1, 1]"],[0," then re"]],"start1":1011,"start2":1011,"length1":16,"length2":51},{"diffs":[[0,"on[0]]\r\n"],[1,"\r\n"],[0,"\t\tnr = 0"]],"start1":1080,"start2":1080,"length1":16,"length2":18}]],"length":1461,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1365525710591,"patch":[[{"diffs":[[0,"ports = ModelDeTable"],[1,"\r\n"]],"start1":1441,"start2":1441,"length1":20,"length2":22}]],"length":1463,"saved":false}

@@ -1227,8 +1227,8 @@ Dual licensed under the MIT and GPL licenses.
       this.queue = {};
       this.model = new (DepMan.model("Tabla"))();
       this.model.done = this.done;
-      $("section").html(DepMan.render("tabla"));
-      this.view = $("section table");
+      jQuery("section").html(DepMan.render("tabla"));
+      this.view = jQuery("section table");
       console.log(this.view);
       this.spots = this.view.find("td");
       this.currentPlayer = 1;
@@ -1390,6 +1390,7 @@ Dual licensed under the MIT and GPL licenses.
 
     AI.prototype.reset = function(player) {
       this.player = player;
+      this.id = this.controller.subscribe("tick", this.handle);
       if (this.player === -1) {
         this.controller.currentPlayer = 1;
         return this.handle(-1, true);
@@ -1747,7 +1748,6 @@ Dual licensed under the MIT and GPL licenses.
         y.handle(1);
       }
       x.model.done = function(cine1) {
-        y.detach();
         console.log("Level 1, result : " + cine1);
         document.body.innerHTML = "<section></section>";
         x = new (DepMan.controller("Tabla"))();
@@ -1756,7 +1756,6 @@ Dual licensed under the MIT and GPL licenses.
           y.handle(1);
         }
         return x.model.done = function(cine2) {
-          y.detach();
           console.log("Level 2, results : " + cine1 + ", " + cine2);
           document.body.innerHTML = "<section></section>";
           if (cine1 === cine2) {
@@ -1775,7 +1774,6 @@ Dual licensed under the MIT and GPL licenses.
               y.handle(1);
             }
             return x.model.done = function(cine3) {
-              y.detach();
               console.log("Level 3, result : " + cine3);
               if (cine3 === RESULTS.Draw) {
                 return _this.draw();
@@ -11690,7 +11688,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   (function() {
     (function() {
     
-      __out.push('<a class="button fancyfont" href="/story/choice" id="Story">Poveste</a>\n<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/mainmenupic_zpsc1c6b6c3.png" id="logo"></img>\n<a class="button fancyfont" href>Joc ocazional</a>\n<a class="button fancyfont" href="/2pgame">Joc în doi</a>\n<a class="button fancyfont" href="/bonus">Bonus</a>\n<a class="button fancyfont" href="/help">Ajutor</a>\n');
+      __out.push('<a class="button fancyfont" href="/story/choice" id="Story">Poveste</a>\n<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/mainmenupic_zpsc1c6b6c3.png" id="logo"></img>\n<a class="button fancyfont" href="/casual">Joc ocazional</a>\n<a class="button fancyfont" href="/2pgame">Joc în doi</a>\n<a class="button fancyfont" href="/bonus">Bonus</a>\n<a class="button fancyfont" href="/help">Ajutor</a>\n');
     
     }).call(this);
     

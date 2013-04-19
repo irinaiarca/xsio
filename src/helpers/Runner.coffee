@@ -19,6 +19,7 @@ class Runner extends BaseObject
 		x.model.done = (cine1) =>
 				console.log "Level 1, result : #{cine1}"
 				document.body.innerHTML = "<section></section>"
+				debugger
 				x = new (DepMan.controller "Tabla")()
 				y = new (DepMan.helper "AI")(x, @character)
 				y.handle 1 if @character is RESULTS.O

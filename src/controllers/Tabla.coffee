@@ -6,8 +6,10 @@ class TableController extends BaseObject
 		@queue = {}
 		@model = new (DepMan.model "Tabla")()
 		@model.done = @done
-		jQuery("section").html DepMan.render "tabla"
-		@view = jQuery("section table")
+		s = jQuery("section")
+		@uuid = Math.uuid()
+		s.html DepMan.render "tabla", uuid: @uuid
+		@view = s.find("table##{@uuid}")
 		console.log @view
 		@spots = @view.find("td")
 		@currentPlayer = 1
@@ -18,6 +20,7 @@ class TableController extends BaseObject
 			
 	tick : (e) => 
 		try 
+			console.log @uuid, e.target, @
 			@model.tick @currentPlayer, e.target.id.replace "spot", ""
 			if @_reset then @_reset = false
 			else 

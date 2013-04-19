@@ -6,3 +6,5 @@
 {"ts":1360957684614,"patch":[[{"diffs":[[-1,"#{gButton(\"/\", \"Înapoi\")}\r\n"],[0,"tabl"]],"start1":0,"start2":0,"length1":31,"length2":4}]],"length":128,"saved":false}
 {"ts":1360957685919,"patch":[[{"diffs":[[1,"!{gButton(\"/\", \"Înapoi\")}\r\n"],[0,"table\r\n\t"]],"start1":0,"start2":0,"length1":8,"length2":35}]],"length":155,"saved":false}
 {"ts":1360957747012,"patch":[[{"diffs":[[0,"\"Înapoi\""],[1,", \"back\""],[0,")}\r\ntabl"]],"start1":15,"start2":15,"length1":16,"length2":24}]],"length":163,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1365525792335,"patch":[[{"diffs":[[0,"}\r\ntable"],[1,"(id=\"{uuid}\")"],[0,"\r\n\ttr\r\n\t"]],"start1":32,"start2":32,"length1":16,"length2":29}]],"length":176,"saved":false}
+{"ts":1365525829768,"patch":[[{"diffs":[[0,"(id="],[-1,"\"{"],[0,"uuid"],[-1,"}\""],[0,")\r\n\t"]],"start1":40,"start2":40,"length1":16,"length2":12}]],"length":172,"saved":false}

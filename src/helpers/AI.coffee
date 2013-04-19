@@ -10,7 +10,7 @@ class AI extends BaseObject
 		while table[AI] isnt 0 
 			console.log table[AI], AI
 			AI=Math.floor(Math.random()*9)
-		@controller.tick {target: document.getElementById "spot#{AI}" }	
+		@controller.tick {target: (jQuery "table##{@controller.uuid} #spot#{AI}")[0] }	
 		
 	allBlank: (table) =>
 		ok = true
