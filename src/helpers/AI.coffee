@@ -1,5 +1,5 @@
 class AI extends BaseObject
-	constructor: (@controller, @player) -> console.log @controller; @id = @controller.subscribe "tick", @handle; @controller.AI = @; @_stop = false
+	constructor: (@controller, @player) -> @gameno = 0; console.log @controller; @id = @controller.subscribe "tick", @handle; @controller.AI = @; @_stop = false
 	handle: (formerplayer, override = false) =>
 		table = @controller.model.table
 		console.log "OVERRIDE", override
@@ -19,7 +19,9 @@ class AI extends BaseObject
 		return ok
 	detach: =>  @controller.unsubscribe "tick", @id
 	reset: (@player) => 
+		@gameno++
 		@id = @controller.subscribe "tick", @handle
+		if @gameno % 2 isnt 0 then @controller.currentPlayer *= -1; @player *= -1
 		if @player is -1
 			@controller.currentPlayer = 1
 			@handle -1, true

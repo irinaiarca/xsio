@@ -957,54 +957,54 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call({}, typeof(module) == "undefined" ? (typeof(window) == "undefined" ? root : window) : module);
 (function(/*! Stitch !*/) {
-  if (!this.require) {
-    var modules = {}, cache = {}, require = function(name, root) {
-      var path = expand(root, name), module = cache[path], fn;
-      if (module) {
-        return module.exports;
-      } else if (fn = modules[path] || modules[path = expand(path, './index')]) {
-        module = {id: path, exports: {}};
-        try {
-          cache[path] = module;
-          fn(module.exports, function(name) {
-            return require(name, dirname(path));
-          }, module);
-          return module.exports;
-        } catch (err) {
-          delete cache[path];
-          throw err;
-        }
-      } else {
-        throw 'module \'' + name + '\' not found';
-      }
-    }, expand = function(root, name) {
-      var results = [], parts, part;
-      if (/^\.\.?(\/|$)/.test(name)) {
-        parts = [root, name].join('/').split('/');
-      } else {
-        parts = name.split('/');
-      }
-      for (var i = 0, length = parts.length; i < length; i++) {
-        part = parts[i];
-        if (part == '..') {
-          results.pop();
-        } else if (part != '.' && part != '') {
-          results.push(part);
-        }
-      }
-      return results.join('/');
-    }, dirname = function(path) {
-      return path.split('/').slice(0, -1).join('/');
-    };
-    this.require = function(name) {
-      return require(name, '');
-    }
-    this.require.define = function(bundle) {
-      for (var key in bundle)
-        modules[key] = bundle[key];
-    };
-  }
-  return this.require.define;
+	if (!this.require) {
+		var modules = {}, cache = {}, require = function(name, root) {
+			var path = expand(root, name), module = cache[path], fn;
+			if (module) {
+				return module.exports;
+			} else if (fn = modules[path] || modules[path = expand(path, './index')]) {
+				module = {id: path, exports: {}};
+				try {
+					cache[path] = module;
+					fn(module.exports, function(name) {
+						return require(name, dirname(path));
+					}, module);
+					return module.exports;
+				} catch (err) {
+					delete cache[path];
+					throw err;
+				}
+			} else {
+				throw 'module \'' + name + '\' not found';
+			}
+		}, expand = function(root, name) {
+			var results = [], parts, part;
+			if (/^\.\.?(\/|$)/.test(name)) {
+				parts = [root, name].join('/').split('/');
+			} else {
+				parts = name.split('/');
+			}
+			for (var i = 0, length = parts.length; i < length; i++) {
+				part = parts[i];
+				if (part == '..') {
+					results.pop();
+				} else if (part != '.' && part != '') {
+					results.push(part);
+				}
+			}
+			return results.join('/');
+		}, dirname = function(path) {
+			return path.split('/').slice(0, -1).join('/');
+		};
+		this.require = function(name) {
+			return require(name, '');
+		}
+		this.require.define = function(bundle) {
+			for (var key in bundle)
+				modules[key] = bundle[key];
+		};
+	}
+	return this.require.define;
 }).call(this)({"Application": function(exports, require, module) {(function() {
   var Application,
     __hasProp = {}.hasOwnProperty,
@@ -1013,12 +1013,12 @@ Dual licensed under the MIT and GPL licenses.
   require("Object");
 
   Application = (function(_super) {
-
     __extends(Application, _super);
 
     function Application(message) {
       var item, items, renderDoc, renderLogout, root, routes, _i, _len, _login,
         _this = this;
+
       root = window;
       root.echo = (require("Object")).echo;
       document.title = "X si O";
@@ -1083,6 +1083,7 @@ Dual licensed under the MIT and GPL licenses.
         },
         "/casual": function() {
           var x, y;
+
           document.body.innerHTML = "<section></section>";
           x = new (DepMan.controller("Tabla"))();
           y = new (DepMan.helper("AI"))(x, 1);
@@ -1109,9 +1110,10 @@ Dual licensed under the MIT and GPL licenses.
         return "<a class='fancyfont" + (stilizat ? " button" : "") + "' id='" + id + "' href='" + link + "'>" + text + "</a>";
       };
       renderLogout = function() {
-        if (!(document.getElementById("admin") != null)) {
+        if (document.getElementById("admin") == null) {
           return (function() {
             var n, w;
+
             w = document.createElement("div");
             w.setAttribute("id", "admin");
             n = document.createElement("span");
@@ -1140,6 +1142,7 @@ Dual licensed under the MIT and GPL licenses.
           routes[item.link] = (function(item) {
             return function() {
               var args;
+
               if (item.link !== "/login" && !localStorage.getItem("login")) {
                 return LinkManager.checkRoute("/");
               }
@@ -1168,7 +1171,7 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call(this);
 }, "Object": function(exports, require, module) {(function() {
-  var BObject, _baseObj,
+  var BObject, _baseObj, _ref,
     __slice = [].slice,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
@@ -1176,6 +1179,7 @@ Dual licensed under the MIT and GPL licenses.
   _baseObj = {
     echo: function() {
       var args, _d;
+
       args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
       _d = new Date;
       args[0] = "[" + (_d.getHours()) + ":" + (_d.getMinutes()) + ":" + (_d.getSeconds()) + "][" + (this.name || this.__proto__.constructor.name) + "]	" + args[0];
@@ -1184,11 +1188,11 @@ Dual licensed under the MIT and GPL licenses.
   };
 
   BObject = (function(_super) {
-
     __extends(BObject, _super);
 
     function BObject() {
-      return BObject.__super__.constructor.apply(this, arguments);
+      _ref = BObject.__super__.constructor.apply(this, arguments);
+      return _ref;
     }
 
     BObject.extend(_baseObj);
@@ -1203,32 +1207,32 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call(this);
 }, "controllers/Tabla": function(exports, require, module) {(function() {
-  var ER, TableController, TableControllerErrorReporter,
+  var ER, TableController, TableControllerErrorReporter, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   TableController = (function(_super) {
-
     __extends(TableController, _super);
 
     TableController.include(IS.Modules.Observer);
 
     function TableController() {
       this.reset = __bind(this.reset, this);
-
       this.player = __bind(this.player, this);
-
       this.done = __bind(this.done, this);
-
       this.tick = __bind(this.tick, this);
+      var kid, s, _i, _len, _ref;
 
-      var kid, _i, _len, _ref;
       this.queue = {};
       this.model = new (DepMan.model("Tabla"))();
       this.model.done = this.done;
-      jQuery("section").html(DepMan.render("tabla"));
-      this.view = jQuery("section table");
+      s = jQuery("section");
+      this.uuid = Math.uuid();
+      s.html(DepMan.render("tabla", {
+        uuid: this.uuid
+      }));
+      this.view = s.find("table#" + this.uuid);
       console.log(this.view);
       this.spots = this.view.find("td");
       this.currentPlayer = 1;
@@ -1242,6 +1246,7 @@ Dual licensed under the MIT and GPL licenses.
 
     TableController.prototype.tick = function(e) {
       try {
+        console.log(this.uuid, e.target, this);
         this.model.tick(this.currentPlayer, e.target.id.replace("spot", ""));
         if (this._reset) {
           return this._reset = false;
@@ -1250,7 +1255,8 @@ Dual licensed under the MIT and GPL licenses.
           this.currentPlayer *= -1;
           return this.publish("tick", this.currentPlayer);
         }
-      } catch (e) {
+      } catch (_error) {
+        e = _error;
         switch (e.errCode) {
           case 1:
             return alert("Faci ceva dubios pe-aci!?");
@@ -1276,6 +1282,7 @@ Dual licensed under the MIT and GPL licenses.
 
     TableController.prototype.reset = function(kind) {
       var kid, _i, _len, _ref;
+
       if (kind == null) {
         kind = 0;
       }
@@ -1302,11 +1309,11 @@ Dual licensed under the MIT and GPL licenses.
   })(BaseObject);
 
   TableControllerErrorReporter = (function(_super) {
-
     __extends(TableControllerErrorReporter, _super);
 
     function TableControllerErrorReporter() {
-      return TableControllerErrorReporter.__super__.constructor.apply(this, arguments);
+      _ref = TableControllerErrorReporter.__super__.constructor.apply(this, arguments);
+      return _ref;
     }
 
     TableControllerErrorReporter.errors = {
@@ -1331,20 +1338,15 @@ Dual licensed under the MIT and GPL licenses.
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   AI = (function(_super) {
-
     __extends(AI, _super);
 
     function AI(controller, player) {
       this.controller = controller;
       this.player = player;
       this.reset = __bind(this.reset, this);
-
       this.detach = __bind(this.detach, this);
-
       this.allBlank = __bind(this.allBlank, this);
-
       this.handle = __bind(this.handle, this);
-
       console.log(this.controller);
       this.id = this.controller.subscribe("tick", this.handle);
       this.controller.AI = this;
@@ -1353,6 +1355,7 @@ Dual licensed under the MIT and GPL licenses.
 
     AI.prototype.handle = function(formerplayer, override) {
       var table;
+
       if (override == null) {
         override = false;
       }
@@ -1368,12 +1371,13 @@ Dual licensed under the MIT and GPL licenses.
         AI = Math.floor(Math.random() * 9);
       }
       return this.controller.tick({
-        target: document.getElementById("spot" + AI)
+        target: (jQuery("table#" + this.controller.uuid + " #spot" + AI))[0]
       });
     };
 
     AI.prototype.allBlank = function(table) {
       var item, ok, _i, _len;
+
       ok = true;
       for (_i = 0, _len = table.length; _i < _len; _i++) {
         item = table[_i];
@@ -1405,54 +1409,48 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call(this);
 }, "helpers/DependenciesManager": function(exports, require, module) {(function() {
-  var DepErr, DepMan,
+  var DepErr, DepMan, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     __slice = [].slice;
 
   DepMan = (function(_super) {
-
     __extends(DepMan, _super);
 
     function DepMan(basePrefix, deps) {
       this.basePrefix = basePrefix != null ? basePrefix : "";
       this.deps = deps != null ? deps : [];
       this.googleFont = __bind(this.googleFont, this);
-
       this.lib = __bind(this.lib, this);
-
       this.model = __bind(this.model, this);
-
       this.controller = __bind(this.controller, this);
-
       this.helper = __bind(this.helper, this);
-
       this.stylesheet = __bind(this.stylesheet, this);
-
       this.doc = __bind(this.doc, this);
-
       this.render = __bind(this.render, this);
-
       this._require = __bind(this._require, this);
-
       this.echo("Activated DependenciesManager!");
     }
 
     DepMan.prototype._require = function(module, prefix) {
+      var e;
+
       if (prefix == null) {
         prefix = "";
       }
       try {
         this.deps["" + prefix + module] = require("" + this.basePrefix + prefix + module);
         return this.deps["" + prefix + module];
-      } catch (e) {
+      } catch (_error) {
+        e = _error;
         throw DepErr.generate(1, "[BP= " + this.basePrefix + "][P= " + prefix + "][P= " + module + "] " + (DepErr.wrapCustomError(e)));
       }
     };
 
     DepMan.prototype.render = function() {
       var args, module;
+
       module = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
       return (this._require(module, "views/")).apply(this, args);
     };
@@ -1483,6 +1481,7 @@ Dual licensed under the MIT and GPL licenses.
 
     DepMan.prototype.googleFont = function(font, sizes, subsets) {
       var names, string, _s;
+
       if (subsets == null) {
         subsets = null;
       }
@@ -1504,11 +1503,11 @@ Dual licensed under the MIT and GPL licenses.
   })(BaseObject);
 
   DepErr = (function(_super) {
-
     __extends(DepErr, _super);
 
     function DepErr() {
-      return DepErr.__super__.constructor.apply(this, arguments);
+      _ref = DepErr.__super__.constructor.apply(this, arguments);
+      return _ref;
     }
 
     DepErr.errorGroups = ["RequireError"];
@@ -1527,7 +1526,7 @@ Dual licensed under the MIT and GPL licenses.
 
 }).call(this);
 }, "helpers/LinkManager": function(exports, require, module) {(function() {
-  var LinkErrorReporter, LinkManager, _first,
+  var LinkErrorReporter, LinkManager, _first, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
@@ -1535,23 +1534,18 @@ Dual licensed under the MIT and GPL licenses.
   _first = true;
 
   LinkManager = (function(_super) {
-
     __extends(LinkManager, _super);
 
     function LinkManager(history, routes) {
       var _this = this;
+
       this.history = history != null ? history : [];
       this.routes = routes != null ? routes : [];
       this.linkAllAnchors = __bind(this.linkAllAnchors, this);
-
       this.getParentAnchor = __bind(this.getParentAnchor, this);
-
       this.link = __bind(this.link, this);
-
       this.checkRoute = __bind(this.checkRoute, this);
-
       this.setRoutes = __bind(this.setRoutes, this);
-
       window.addEventListener("popstate", (function(e) {
         if (_first) {
           return _first = false;
@@ -1564,6 +1558,7 @@ Dual licensed under the MIT and GPL licenses.
 
     LinkManager.prototype.setRoutes = function(routePatterns) {
       var handler, route;
+
       for (route in routePatterns) {
         handler = routePatterns[route];
         this.routes.push({
@@ -1576,6 +1571,7 @@ Dual licensed under the MIT and GPL licenses.
 
     LinkManager.prototype.checkRoute = function(after) {
       var args, id, l, loc, r, res, route, routeSet, _baseLoc, _i, _len, _loc, _ref;
+
       if (after == null) {
         after = "";
       }
@@ -1634,6 +1630,7 @@ Dual licensed under the MIT and GPL licenses.
 
     LinkManager.prototype.link = function(e) {
       var el, link;
+
       if (e.substr != null) {
         link = e;
       } else {
@@ -1647,7 +1644,7 @@ Dual licensed under the MIT and GPL licenses.
     };
 
     LinkManager.prototype.getParentAnchor = function(e) {
-      if (!(e != null)) {
+      if (e == null) {
         return null;
       }
       if (e.tagName === "A") {
@@ -1658,6 +1655,7 @@ Dual licensed under the MIT and GPL licenses.
 
     LinkManager.prototype.linkAllAnchors = function() {
       var anchor, anchors, _i, _len, _results;
+
       anchors = document.querySelectorAll("a");
       _results = [];
       for (_i = 0, _len = anchors.length; _i < _len; _i++) {
@@ -1672,11 +1670,11 @@ Dual licensed under the MIT and GPL licenses.
   })(BaseObject);
 
   LinkErrorReporter = (function(_super) {
-
     __extends(LinkErrorReporter, _super);
 
     function LinkErrorReporter() {
-      return LinkErrorReporter.__super__.constructor.apply(this, arguments);
+      _ref = LinkErrorReporter.__super__.constructor.apply(this, arguments);
+      return _ref;
     }
 
     LinkErrorReporter.errorGroups = [];
@@ -1701,9 +1699,9 @@ Dual licensed under the MIT and GPL licenses.
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   Enum = (function() {
-
     function Enum(items, offset) {
       var item, key, _i, _len;
+
       if (offset == null) {
         offset = 0;
       }
@@ -1720,27 +1718,22 @@ Dual licensed under the MIT and GPL licenses.
   RESULTS = new Enum(["O", "Inconclusive", "X", "Draw"], -1);
 
   Runner = (function(_super) {
-
     __extends(Runner, _super);
 
     function Runner(character) {
       this.character = character;
       this.which = __bind(this.which, this);
-
       this.draw = __bind(this.draw, this);
-
       this.win = __bind(this.win, this);
-
       this.lose = __bind(this.lose, this);
-
       this.play = __bind(this.play, this);
-
       this.play();
     }
 
     Runner.prototype.play = function() {
       var x, y,
         _this = this;
+
       console.log("Playing with " + this.character);
       x = new (DepMan.controller("Tabla"))();
       y = new (DepMan.helper("AI"))(x, this.character);
@@ -1750,6 +1743,7 @@ Dual licensed under the MIT and GPL licenses.
       x.model.done = function(cine1) {
         console.log("Level 1, result : " + cine1);
         document.body.innerHTML = "<section></section>";
+        debugger;
         x = new (DepMan.controller("Tabla"))();
         y = new (DepMan.helper("AI"))(x, _this.character);
         if (_this.character === RESULTS.O) {
@@ -11386,9 +11380,9 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   var Enum;
 
   Enum = (function() {
-
     function Enum(items) {
       var item, key, _i, _len;
+
       for (key = _i = 0, _len = items.length; _i < _len; key = ++_i) {
         item = items[key];
         this[item] = key;
@@ -11403,7 +11397,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 }).call(this);
 }, "models/Tabla": function(exports, require, module) {(function() {
-  var ER, ModelDeTable, ModelDeTableErrorReporter, _solve,
+  var ER, ModelDeTable, ModelDeTableErrorReporter, _ref, _solve,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
@@ -11412,20 +11406,17 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   _solve = [[0, 1, 2], [0, 3, 6], [0, 4, 8], [2, 5, 8], [6, 7, 8], [2, 4, 6], [3, 4, 5], [1, 4, 7]];
 
   ModelDeTable = (function(_super) {
-
     __extends(ModelDeTable, _super);
 
     function ModelDeTable() {
       this.check = __bind(this.check, this);
-
       this.reset = __bind(this.reset, this);
-
-      this.tick = __bind(this.tick, this);
-      this.reset();
+      this.tick = __bind(this.tick, this);      this.reset();
     }
 
     ModelDeTable.prototype.tick = function(who, spot) {
       var status, _ref;
+
       if (_ref = !spot, __indexOf.call([0, 1, 2, 3, 4, 5, 6, 7, 8], _ref) >= 0) {
         throw ER.generate(1);
       }
@@ -11451,6 +11442,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
     ModelDeTable.prototype.check = function() {
       var index, nr, solution, x, _i, _j, _k, _len, _len1, _ref, _ref1;
+
       for (_i = 0, _len = _solve.length; _i < _len; _i++) {
         solution = _solve[_i];
         for (_j = 0, _len1 = solution.length; _j < _len1; _j++) {
@@ -11480,11 +11472,11 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   })(BaseObject);
 
   ModelDeTableErrorReporter = (function(_super) {
-
     __extends(ModelDeTableErrorReporter, _super);
 
     function ModelDeTableErrorReporter() {
-      return ModelDeTableErrorReporter.__super__.constructor.apply(this, arguments);
+      _ref = ModelDeTableErrorReporter.__super__.constructor.apply(this, arguments);
+      return _ref;
     }
 
     ModelDeTableErrorReporter.errors = {
@@ -11542,7 +11534,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<div style="position: fixed; left: 0; right: 0; top: 0; bottom: 0; background:black; font-family: electrolize;">\n\t<h1 style="font-size: 48pt; text-align: center; color: white; background: red;">Pagina nu exista</h1>\n</div>');
     
     }).call(this);
@@ -11589,7 +11580,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push(gButton("/", "Înapoi", "back"));
     
       __out.push('\n\n<p>Jocul X si O pe hârtie este considerat cel mai vechi joc din istorie. Chiar dacă, în prezent oricine accesează un site cu jocuri \nonline poate juca X și O în acest format, nimic nu se compară cu adevăratele “campionate” de X și O din timpul orelor sau \ncursurilor.<br></p>\n<p><b>Istorie</b><br></p>\n<p>Nu există foarte multe date istorice despre acest joc, dar se presupune că jocul X și O își are originile în Antichitate, fiind adesea jucat de către cetățenii Imperiului Roman in jurul \nsecolului I i.Hr. Pe atunci, jocul purta numele de ”Terni Lapilli” și principala diferență dintre acest joc și versiunea zilelor \nnoastră este faptul că jucătorii aveau la dispoziție numai câte trei piese pe care le puteau muta în spațiile libere. De asemenea, s-a \nformulat și afirmația conform căreia jocul X și O își are originile în Egiptul antic. </p>\n<p>În anul 1952 apare prima versiune computerizată a acestui joc, versiune care poartă numele de ”OXO”.</p>\n\n');
@@ -11638,7 +11628,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push(gButton("/", "Înapoi", "back"));
     
       __out.push('\n\n<p>Celebrul X și O, sau tic-tac-toe \neste un joc pentru doi jucători, \n”X”, reprezentat de spiridușul \nalbastru, și ”O”, reprezentat de \nspiridușul roz.<br></p>\n\n<p>Inițial, tabla de joc este \nalcătuită din 9 pătrățele goale, \naliniate într-o tablă de 3x3.\nScopul fiecărui jucător este de a \ncompleta un rând, o coloană, sau \no diagonală, cu semnul propriu, \nînaintea adversarului. Ambii \njucători mută alternativ și, \npentru că X este ceva mai egoist, \nel va începe întotdeauna primul.<br></p>\n\n<p>Cele trei moduri de joc:<br></p>\n<ul>\n<p id="list"><li>Poveste: În funcție de \npersonajul ales, jocul se va \ndesfășura în jurul unei mici \npovești, prezentate la începutul \njocului printr-o bandă desenată, \ncu două finaluri posibile. Pentru \na vedea finalul fericit, \njucătorul trebuie să câștige cel \npuțin două runde de joc din cele \ntrei.<br></p>\n\n<p id="list"><li>Joc ocazional: Acest mod \nde joc seamănă puțin cu modul \n”Poveste”, diferența fiind faptul \ncă nu mai există poveste, iar \njucătorul poate juca oricâte \nrunde dorește.<br></p>\n\n<p id="list"><li>Joc în doi: Aici \njucătorul poate juca împreună cu \nun prieten, la același \ncalculator.</p>\n</ul>');
@@ -11687,7 +11676,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<a class="button fancyfont" href="/story/choice" id="Story">Poveste</a>\n<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/mainmenupic_zpsc1c6b6c3.png" id="logo"></img>\n<a class="button fancyfont" href="/casual">Joc ocazional</a>\n<a class="button fancyfont" href="/2pgame">Joc în doi</a>\n<a class="button fancyfont" href="/bonus">Bonus</a>\n<a class="button fancyfont" href="/help">Ajutor</a>\n');
     
     }).call(this);
@@ -11734,7 +11722,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<p id="logintext">X și O</p>\n<form><input type=\'text\'  placeholder=\'Introdu numele tău\'/>\n<input type=\'submit\' value=\'Login\'>\n</form>\n');
     
     }).call(this);
@@ -11781,7 +11768,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push(gButton("/story/choice", "Înapoi", "back"));
     
       __out.push('\n\n<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/bluestory_zps3f724d7e.png" id="tori"><img>\n\n<a class="button fancyfont" id="startjoc" href="/story/blue/game">Start</a>');
@@ -11830,8 +11816,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
-    
+      __out.push('<img id="fin" src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/mertyloses_zps54af4c50.png"></img>\n<a class="button fancyfont" id="finbutton" href="/index">Ai pierdut!</a>');
     
     }).call(this);
     
@@ -11877,7 +11862,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<img id="fin" src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/gamebluewin_zpsf48948b1.png"></img>\n<a class="button fancyfont" id="finbutton" href="/index">Ai câștigat!</a>');
     
     }).call(this);
@@ -11924,10 +11908,9 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push(gButton("/", "Înapoi", "back"));
     
-      __out.push('\n<a href="/story/pink"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pipp_zpscac1b701.png" onclick="" /class=choiceicon id=pipp></a>\n<a href="/story/blue"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/merty_zps947fdb5c.png" onclick="" /class=choiceicon></a>\n');
+      __out.push('\n<a href="/story/pink"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pipp_zpscac1b701.png" onclick="" /class=choiceicon id=pipp></a>\n<a href="/story/blue"><img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/merty_zps947fdb5c.png" onclick="" /class=choiceicon></a>\n<p id="rtard">Dă click pe unul dintre cele două personaje pentru a-l alege.</p>\n');
     
     }).call(this);
     
@@ -11973,7 +11956,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<img id="fin" src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/gamedraw_zpsb9a8e8a2.png"></img>\n<a class="button fancyfont" id="finbutton" href="/index">Egalitate</a>');
     
     }).call(this);
@@ -12020,7 +12002,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push(gButton("/story/choice", "Înapoi", "back"));
     
       __out.push('\n\n<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pinkstory_zps7da3115e.png" id="tori"><img>\n<a class="button fancyfont" id="startjoc" href="/story/pink/game">Start</a>');
@@ -12069,8 +12050,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
-    
+      __out.push('<img id="fin" src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/pipploses_zpsa13f983e.png"></img>\n<a class="button fancyfont" id="finbutton" href="/index">Ai pierdut!</a>');
     
     }).call(this);
     
@@ -12116,7 +12096,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   }
   (function() {
     (function() {
-    
       __out.push('<img id="fin" src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/gamepinkwin_zps86cbb6d4.png"></img>\n<a class="button fancyfont" id="finbutton" href="/index">Ai câștigat!</a>');
     
     }).call(this);
@@ -12311,8 +12290,10 @@ __jade.unshift({ lineno: 1, filename: __jade[0].filename });
 __jade.unshift({ lineno: 1, filename: __jade[0].filename });
 buf.push('' + ((interp = gButton("/", "Înapoi", "back")) == null ? '' : interp) + '');
 __jade.shift();
-__jade.unshift({ lineno: 3, filename: __jade[0].filename });
-buf.push('<table>');
+__jade.unshift({ lineno: 2, filename: __jade[0].filename });
+buf.push('<table');
+buf.push(attrs({ 'id':(uuid) }, {"id":true}));
+buf.push('>');
 __jade.unshift({ lineno: undefined, filename: __jade[0].filename });
 __jade.unshift({ lineno: 4, filename: __jade[0].filename });
 buf.push('<tr>');

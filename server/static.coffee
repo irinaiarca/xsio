@@ -43,7 +43,7 @@ class Server
 		return throw ServerErrorReporter.generate 7 if not Express?
 
 		try # Attempt to configure the server and return an error
-			App = do Express.createServer
+			App = Express()
 			App.configure =>
 				App.use Express.bodyParser()
 				App.use App.router
@@ -57,6 +57,7 @@ class Server
 					App.get "/js/g.js", (req, res) => @compiler.compile null, (source) ->
 						res.send source, {"Content-Type": "text/javascript"}, 201
 					App.get "/css/styles.css", (req, res) => @compiler.compileStyles null, (source) ->
+						res.setHeader("Content-Type", "text/css")
 						res.send source, {"Content-Type": "text/css"}, 201
 					App.get "/font/*", (req, res) => 
 						res.sendfile (require "path").resolve "#{__dirname}/../public#{req.url}"

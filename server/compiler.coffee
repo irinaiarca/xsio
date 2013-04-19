@@ -3,10 +3,11 @@ require "isf"
 stitch = require "stitchw"
 stylus = require "stylus"
 nib    = require "nib"
-base   = (require "path").resolve "@{__dirname}/../src/stylesheets"
+path   = require "path"
+base   = path.resolve "@{__dirname}/../src/stylesheets"
 pack   = stitch.createPackage
-	"dependencies": ["./node_modules/isf/lib/application.js"]
-	"paths": ["./src"]
+	"dependencies": [ path.resolve "./node_modules/isf/lib/application.js"]
+	"paths": [ path.resolve "./src"]
 
 
 # The Compiler Bootstrap
@@ -20,7 +21,7 @@ class Compiler
 				if callback? then callback source
 				else
 					try
-						(require "fs").writeFileSync to.toString(), source, "utf8"
+						(require "fs").writeFileSync (path.resolve to.toString()), source, "utf8"
 					catch e then return throw CompilerErrorReporter.generate 3, CompilerErrorReporter.wrapCustomError e
 		catch e then return throw CompilerErrorReporter.generate 1, e
 
@@ -39,7 +40,7 @@ class Compiler
 				if callback? then callback css
 				else
 					try
-						( require "fs" ).writeFileSync to.toString(), css, "utf8"
+						( require "fs" ).writeFileSync (path.resolve to.toString()), css, "utf8"
 					catch e then return throw CompilerErrorReporter.generate 6, CompilerErrorReporter.wrapCustomError e
 		catch e
 			throw new CompilerErrorReporter.generate 5, CompilerErrorReporter.wrapCustomError e
