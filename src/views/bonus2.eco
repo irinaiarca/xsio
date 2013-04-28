@@ -1,0 +1,11 @@
+<%- gButton "/bonus", "Înapoi", "back" %>
+<p><b>Istorie</b><br></p>
+<p>Nu există foarte multe date istorice despre acest joc, dar se presupune că jocul X și O își are originile în Antichitate, fiind adesea jucat de către cetățenii Imperiului Roman in jurul 
+secolului I i.Hr. Pe atunci, jocul purta numele de ”Terni Lapilli” și principala diferență dintre acest joc și versiunea zilelor 
+noastră este faptul că jucătorii aveau la dispoziție numai câte trei piese pe care le puteau muta în spațiile libere. De asemenea, s-a 
+formulat și afirmația conform căreia originile jocului X și O ar fi fost, de fapt în Egiptul antic. </p>
+<p>În anul 1952 apare prima versiune computerizată a acestui joc, versiune care poartă numele de ”OXO”.</p>
+<p>În 1975, studenții de la MIT au folosit acest joc pentru a arăta capacitatea de procesare a calculatorului Tinkertoy, ce poate fi găsit, 
+în prezent la Muzeul de Știință, Boston.<p>
+<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/romaf_zpsc7b932c0.png" id="isto" width="200"></img>
+<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/egiptf_zpsf2ace0ae.png" id="isto" width="200"></img>

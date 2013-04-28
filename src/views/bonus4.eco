@@ -1,0 +1,29 @@
+<%- gButton "/bonus", "Înapoi", "back" %>
+
+<p><b>Variații</b><br></p>
+
+Există sute de jocuri similare tradiționalului X și O. Iată câteva exemple:
+
+<ul>
+
+<p><li>Gomoku - Tabla de joc este un caroiaj tip "caiet cu pătrățele", având dimensiunile de 19X19: 19 linii și 19 coloane. 
+Jucătorul care formează cele mai multe rânduri, coloane sau diagonale de 5 piese câștigă.<br></p>
+
+<p><li> Super tic-tac-toe - Tabla de joc are dimensiunile de 9x9: 9 table de 3x3 în care se joacă X și O. Semnul câștigător
+marchează pătratul de 3x3 din tabla mare.<br></p>
+
+<p><li>Qubic - Un X și O 3D, ce a fost vândut de Parker Brothers începând cu anul 1953.<br></p>
+
+<p><li>Quarto - Acest joc a fost inventat de un matematician elvețian, Blaise Müller. Tabla de joc are dimensiunile de 4x4 și 
+se folosesc 16 piese (8 pentru fiecare jucător). Cel care completează un rând, o coloană, sau o diagonală câștigă.<br></p>
+
+<p><li>Gobblet - Similar lui Quarto, numai că fiecare jucător are la dispoziție 12 piese în forma unor pahare de diverse
+dimensiuni. Astfel, un jucător poate „înlocui” piesa adversarului cu a sa punând o piesă mai mare peste ea.<br></p>
+
+<p><li> Losing tic-tac-toe - Similar lui X și O, numai că scopul jucătorilor nu este să completeze un rând, coloană sau 
+diagonală, pentru că primul care face acest lucru pierde jocul.<br></p>
+
+<p><li> Pente - Acest joc a fost creat de Gary Gabrel, un angajat al unei pizzerii din Stillwater, Oklahoma. Tabla de joc era imprimată 
+pe fețele de masă, iar clienții jucau în timp ce își așteptau mâncarea.<br></p>
+
+</ul>

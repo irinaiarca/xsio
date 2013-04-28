@@ -36,6 +36,9 @@ class Application extends BaseObject
 			}
 			{link: "/help"}
 			{link: "/bonus"}
+			{link: "/bonus2"}
+			{link: "/bonus3"}
+			{link: "/bonus4"}
 			{link: "/index"}
 			{link: "/story/choice"}
 			{link: "/story/blue"}

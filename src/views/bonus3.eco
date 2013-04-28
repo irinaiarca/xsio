@@ -1,0 +1,15 @@
+<%- gButton "/bonus", "Înapoi", "back" %>
+
+<p><b>Știați că...?</b><br></p>
+
+<p>...în limba engleză, jocul poartă numele de „tic-tac-toe” (în Statele Unite și în Canada), sau „naughts and crosses” 
+(în Marea Britanie, Australia, Noua Zeelandă și Africa de Sud)? În alte țări poate fi găsit 
+sub numele de „ta-te-ti”, „exy-ozys” sau „O-X”.</p>
+<p>...deoarece „X” începe întotdeauna primul, la finalul oricărui joc, numărul de X-uri va fi întotdeauna
+fie egal, fie cu 1 mai mare decât numărul de O-uri?
+<p>...luând în considerare simetriile tablei, există 138 de „poziții finale” ale jocului 
+de „X și O”? Presupunând că „X” începe mereu primul, sunt 91 de astfel de poziții pentru „X”, 
+44 pentru „O” și doar 3 pentru „egalitate”.</p>
+<p>...jocul se poate desfășura în 255168 de moduri? 131184 dintre acestea sunt 
+câștigate de „X”, 77904 sunt câștigate de „O” și 46080 se termină cu egalitate.</p>
+<img src="http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/didyoukno_zps36967071.png" id="didukno"></img>

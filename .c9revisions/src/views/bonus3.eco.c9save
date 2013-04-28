@@ -1,0 +1,187 @@
+{"ts":1367057522902,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1367058647256,"patch":[[{"diffs":[[1,"<%- gButton \"/bonus\", \"Înapoi\", \"back\" %>\n\n<p><b>Știați că...?</b><br></p>\n\n...luând în considerare simetriile tablei, există 138 de „poziții finale” ale jocului \nde X și O? Presupunând că „X” începe mereu primul, "]],"start1":0,"start2":0,"length1":0,"length2":214}]],"length":214,"saved":false}
+{"ts":1367058669725,"patch":[[{"diffs":[[0,"primul, "],[1,"sunt 91 de astf"]],"start1":206,"start2":206,"length1":8,"length2":23}]],"length":229,"saved":false}
+{"ts":1367058671452,"patch":[[{"diffs":[[0," de astf"],[1,"el de po"]],"start1":221,"start2":221,"length1":8,"length2":16}]],"length":237,"saved":false}
+{"ts":1367058676856,"patch":[[{"diffs":[[0,"el de po"],[1,"ziții pentru X"]],"start1":229,"start2":229,"length1":8,"length2":22}]],"length":251,"saved":false}
+{"ts":1367058678393,"patch":[[{"diffs":[[0,"pentru X"],[1,", "]],"start1":243,"start2":243,"length1":8,"length2":10}]],"length":253,"saved":false}
+{"ts":1367058679734,"patch":[[{"diffs":[[0,"ntru X, "],[1,"\n"]],"start1":245,"start2":245,"length1":8,"length2":9}]],"length":254,"saved":false}
+{"ts":1367058693433,"patch":[[{"diffs":[[0,"tru X, \n"],[1,"44 pentru O"]],"start1":246,"start2":246,"length1":8,"length2":19}]],"length":265,"saved":false}
+{"ts":1367058694732,"patch":[[{"diffs":[[0,"pentru O"],[1," și"]],"start1":257,"start2":257,"length1":8,"length2":11}]],"length":268,"saved":false}
+{"ts":1367058699387,"patch":[[{"diffs":[[0,"tru O și"],[1," doar 3 "]],"start1":260,"start2":260,"length1":8,"length2":16}]],"length":276,"saved":false}
+{"ts":1367058702405,"patch":[[{"diffs":[[0," doar 3 "],[1,"pentru "]],"start1":268,"start2":268,"length1":8,"length2":15}]],"length":283,"saved":false}
+{"ts":1367058703758,"patch":[[{"diffs":[[0,"i doar 3 pentru "],[1,"„”"]],"start1":267,"start2":267,"length1":16,"length2":18}]],"length":285,"saved":false}
+{"ts":1367058708662,"patch":[[{"diffs":[[0,"pentru „"],[1,"egalitate"],[0,"”"]],"start1":276,"start2":276,"length1":9,"length2":18}]],"length":294,"saved":false}
+{"ts":1367058711291,"patch":[[{"diffs":[[0,"alitate”"],[1,"."]],"start1":286,"start2":286,"length1":8,"length2":9}]],"length":295,"saved":false}
+{"ts":1367058717335,"patch":[[{"diffs":[[0," pentru "],[-1,"O"],[1,"„O”"],[0," și doar"]],"start1":256,"start2":256,"length1":17,"length2":19}]],"length":297,"saved":false}
+{"ts":1367058721871,"patch":[[{"diffs":[[0,"lui \nde "],[1,"„"],[0,"X și O? "]],"start1":158,"start2":158,"length1":16,"length2":17}]],"length":298,"saved":false}
+{"ts":1367058723554,"patch":[[{"diffs":[[0," „X și O"],[1,"”"],[0,"? Presup"]],"start1":165,"start2":165,"length1":16,"length2":17}]],"length":299,"saved":false}
+{"ts":1367058730262,"patch":[[{"diffs":[[0," pentru "],[-1,"X"],[1,"„X”"],[0,", \n44 pe"]],"start1":244,"start2":244,"length1":17,"length2":19}]],"length":301,"saved":false}
+{"ts":1367058739536,"patch":[[{"diffs":[[0,"litate”."],[1,"\n..."]],"start1":293,"start2":293,"length1":8,"length2":12}]],"length":305,"saved":false}
+{"ts":1367058778371,"patch":[[{"diffs":[[0,"litate”.\n..."],[1,"dacă nu luăm în "]],"start1":293,"start2":293,"length1":12,"length2":28}]],"length":321,"saved":false}
+{"ts":1367058780004,"patch":[[{"diffs":[[0," nu luăm în "],[1,"conside"]],"start1":309,"start2":309,"length1":12,"length2":19}]],"length":328,"saved":false}
+{"ts":1367058788361,"patch":[[{"diffs":[[0," luăm în conside"],[1,"rare "]],"start1":312,"start2":312,"length1":16,"length2":21}]],"length":333,"saved":false}
+{"ts":1367058813766,"patch":[[{"diffs":[[0,"\n..."],[-1,"dacă nu luăm în considerare "]],"start1":301,"start2":301,"length1":32,"length2":4}]],"length":305,"saved":false}
+{"ts":1367058848738,"patch":[[{"diffs":[[0,"litate”.\n..."],[1,"jocul se poate "]],"start1":293,"start2":293,"length1":12,"length2":27}]],"length":320,"saved":false}
+{"ts":1367058850524,"patch":[[{"diffs":[[0,"e poate "],[1,"desfă"]],"start1":312,"start2":312,"length1":8,"length2":13}]],"length":325,"saved":false}
+{"ts":1367058855544,"patch":[[{"diffs":[[0,"te desfă"],[1,"șura în "]],"start1":317,"start2":317,"length1":8,"length2":16}]],"length":333,"saved":false}
+{"ts":1367058865197,"patch":[[{"diffs":[[0,"esfășura în "],[1,"peste 255000 "]],"start1":321,"start2":321,"length1":12,"length2":25}]],"length":346,"saved":false}
+{"ts":1367058866409,"patch":[[{"diffs":[[0," 255000 "],[1,"de "]],"start1":338,"start2":338,"length1":8,"length2":11}]],"length":349,"saved":false}
+{"ts":1367058869174,"patch":[[{"diffs":[[0,"e 255000 de "],[1,"moduri posi"]],"start1":337,"start2":337,"length1":12,"length2":23}]],"length":360,"saved":false}
+{"ts":1367058871696,"patch":[[{"diffs":[[0,"uri posi"],[1,"bile?"]],"start1":352,"start2":352,"length1":8,"length2":13}]],"length":365,"saved":false}
+{"ts":1367059474076,"patch":[[{"diffs":[[0," 255"],[-1,"000"],[1,"168"],[0," de "]],"start1":338,"start2":338,"length1":11,"length2":11}]],"length":365,"saved":false}
+{"ts":1367059480939,"patch":[[{"diffs":[[0," 255168 "],[1,"(9"],[0,"de modur"]],"start1":338,"start2":338,"length1":16,"length2":18}]],"length":367,"saved":false}
+{"ts":1367059482520,"patch":[[{"diffs":[[0,"55168 (9"],[1,"!-"],[0,"de modur"]],"start1":340,"start2":340,"length1":16,"length2":18}]],"length":369,"saved":false}
+{"ts":1367060310498,"patch":[[{"diffs":[[0,"168 "],[-1,"(9!-"],[0,"de m"]],"start1":342,"start2":342,"length1":12,"length2":8}]],"length":365,"saved":false}
+{"ts":1367060329157,"patch":[[{"diffs":[[0,"osibile?"],[1," "]],"start1":357,"start2":357,"length1":8,"length2":9}]],"length":366,"saved":false}
+{"ts":1367060336014,"patch":[[{"diffs":[[0,"sibile? "],[1,"131184"]],"start1":358,"start2":358,"length1":8,"length2":14}]],"length":372,"saved":false}
+{"ts":1367060337165,"patch":[[{"diffs":[[0,"? 131184"],[1," "]],"start1":364,"start2":364,"length1":8,"length2":9}]],"length":373,"saved":false}
+{"ts":1367060346353,"patch":[[{"diffs":[[0," 131184 "],[1,"77904"]],"start1":365,"start2":365,"length1":8,"length2":13}]],"length":378,"saved":false}
+{"ts":1367060353451,"patch":[[{"diffs":[[0,"84 77904"],[1," "]],"start1":370,"start2":370,"length1":8,"length2":9}]],"length":379,"saved":false}
+{"ts":1367060361615,"patch":[[{"diffs":[[0,"4 77904 "],[1,"46080"]],"start1":371,"start2":371,"length1":8,"length2":13}]],"length":384,"saved":false}
+{"ts":1367060366164,"patch":[[{"diffs":[[0," 131184 "],[1,"dintre ac"],[0,"77904 46"]],"start1":365,"start2":365,"length1":16,"length2":25}]],"length":393,"saved":false}
+{"ts":1367060375809,"patch":[[{"diffs":[[0,"intre ac"],[1,"estea s"],[0,"77904 46"]],"start1":374,"start2":374,"length1":16,"length2":23}]],"length":400,"saved":false}
+{"ts":1367060380026,"patch":[[{"diffs":[[0,"cestea s"],[1,"unt câ"],[0,"77904 46"]],"start1":381,"start2":381,"length1":16,"length2":22}]],"length":406,"saved":false}
+{"ts":1367060381362,"patch":[[{"diffs":[[0," sunt câ"],[1,"ș"],[0,"77904 46"]],"start1":387,"start2":387,"length1":16,"length2":17}]],"length":407,"saved":false}
+{"ts":1367060386986,"patch":[[{"diffs":[[0,"ea sunt "],[1,"\n"],[0,"câș77904"]],"start1":385,"start2":385,"length1":16,"length2":17}]],"length":408,"saved":false}
+{"ts":1367060388408,"patch":[[{"diffs":[[0,"unt \ncâș"],[1,"tigate "],[0,"77904 46"]],"start1":389,"start2":389,"length1":16,"length2":23}]],"length":415,"saved":false}
+{"ts":1367060390852,"patch":[[{"diffs":[[0,"știgate "],[1,"de „”"],[0,"77904 46"]],"start1":396,"start2":396,"length1":16,"length2":21}]],"length":420,"saved":false}
+{"ts":1367060398494,"patch":[[{"diffs":[[0,"ate de „"],[-1,"”"],[1,"X”, "],[0,"77904 46"]],"start1":400,"start2":400,"length1":17,"length2":20}]],"length":423,"saved":false}
+{"ts":1367060400116,"patch":[[{"diffs":[[0,", 77904 "],[1," "],[0,"46080"]],"start1":410,"start2":410,"length1":13,"length2":14}]],"length":424,"saved":false}
+{"ts":1367060404975,"patch":[[{"diffs":[[0,", 77904 "],[1,"sunt câș"],[0," 46080"]],"start1":410,"start2":410,"length1":14,"length2":22}]],"length":432,"saved":false}
+{"ts":1367060406457,"patch":[[{"diffs":[[0,"sunt câș"],[1,"tigate "],[0," 46080"]],"start1":418,"start2":418,"length1":14,"length2":21}]],"length":439,"saved":false}
+{"ts":1367060408093,"patch":[[{"diffs":[[0,"știgate "],[1,"de "],[0," 46080"]],"start1":425,"start2":425,"length1":14,"length2":17}]],"length":442,"saved":false}
+{"ts":1367060411702,"patch":[[{"diffs":[[0,"gate de "],[1,"„O”"],[0," 46080"]],"start1":428,"start2":428,"length1":14,"length2":17}]],"length":445,"saved":false}
+{"ts":1367060413011,"patch":[[{"diffs":[[0,"e de „O”"],[1," și"],[0," 46080"]],"start1":431,"start2":431,"length1":14,"length2":17}]],"length":448,"saved":false}
+{"ts":1367060424875,"patch":[[{"diffs":[[0,"și 46080"],[1," se termină "]],"start1":440,"start2":440,"length1":8,"length2":20}]],"length":460,"saved":false}
+{"ts":1367060433840,"patch":[[{"diffs":[[0,"80 s"],[-1,"e termină "]],"start1":446,"start2":446,"length1":14,"length2":4}]],"length":450,"saved":false}
+{"ts":1367060440892,"patch":[[{"diffs":[[0," 46080 s"],[1,"e termină cu egalitate"]],"start1":442,"start2":442,"length1":8,"length2":30}]],"length":472,"saved":false}
+{"ts":1367060442209,"patch":[[{"diffs":[[0,"ină cu egalitate"],[1,"."]],"start1":456,"start2":456,"length1":16,"length2":17}]],"length":473,"saved":false}
+{"ts":1367060530060,"patch":[[{"diffs":[[0," în "],[-1,"peste "],[0,"2551"]],"start1":329,"start2":329,"length1":14,"length2":8}]],"length":467,"saved":false}
+{"ts":1367060537156,"patch":[[{"diffs":[[0,"duri"],[-1," posibile"],[0,"? 13"]],"start1":345,"start2":345,"length1":17,"length2":8}]],"length":458,"saved":false}
+{"ts":1367060670552,"patch":[[{"diffs":[[0,"r></p>\n\n"],[1,"<p>"],[0,"...luând"]],"start1":68,"start2":68,"length1":16,"length2":19}]],"length":461,"saved":false}
+{"ts":1367060672624,"patch":[[{"diffs":[[0,"litate”."],[1,"</p>"],[0,"\n...jocu"]],"start1":296,"start2":296,"length1":16,"length2":20}]],"length":465,"saved":false}
+{"ts":1367060683508,"patch":[[{"diffs":[[0,"e”.</p>\n"],[1,"<p>"],[0,"...jocul"]],"start1":301,"start2":301,"length1":16,"length2":19},{"diffs":[[0,"alitate."],[1,"<"]],"start1":460,"start2":460,"length1":8,"length2":9}]],"length":469,"saved":false}
+{"ts":1367060689548,"patch":[[{"diffs":[[0,"litate.<"],[1,"/p>"]],"start1":461,"start2":461,"length1":8,"length2":11}]],"length":472,"saved":false}
+{"ts":1367061044916,"patch":[[{"diffs":[[0,"r></p>\n\n"],[1,"<\n"],[0,"<p>...lu"]],"start1":68,"start2":68,"length1":16,"length2":18}]],"length":474,"saved":false}
+{"ts":1367061045475,"patch":[[{"diffs":[[0,"></p>\n\n<"],[1,"p"],[0,"\n<p>...l"]],"start1":69,"start2":69,"length1":16,"length2":17}]],"length":475,"saved":false}
+{"ts":1367061046713,"patch":[[{"diffs":[[0,"</p>\n\n<p"],[1,">"],[0,"\n<p>...l"]],"start1":70,"start2":70,"length1":16,"length2":17}]],"length":476,"saved":false}
+{"ts":1367061050913,"patch":[[{"diffs":[[0,"/p>\n\n<p>"],[1,"...d"],[0,"\n<p>...l"]],"start1":71,"start2":71,"length1":16,"length2":20}]],"length":480,"saved":false}
+{"ts":1367061052153,"patch":[[{"diffs":[[0,"\n<p>...d"],[1,"eoar"],[0,"\n<p>...l"]],"start1":75,"start2":75,"length1":16,"length2":20}]],"length":484,"saved":false}
+{"ts":1367061054397,"patch":[[{"diffs":[[0,"...deoar"],[1,"ece X "],[0,"\n<p>...l"]],"start1":79,"start2":79,"length1":16,"length2":22}]],"length":490,"saved":false}
+{"ts":1367061057188,"patch":[[{"diffs":[[0,"arece X "],[1,"]nce"],[0,"\n<p>...l"]],"start1":85,"start2":85,"length1":16,"length2":20}]],"length":494,"saved":false}
+{"ts":1367061059269,"patch":[[{"diffs":[[0,"e X "],[-1,"]nce"],[0,"\n<p>"]],"start1":89,"start2":89,"length1":12,"length2":8}]],"length":490,"saved":false}
+{"ts":1367061064949,"patch":[[{"diffs":[[0,"arece X "],[1,"în"],[0,"\n<p>...l"]],"start1":85,"start2":85,"length1":16,"length2":18}]],"length":492,"saved":false}
+{"ts":1367061067838,"patch":[[{"diffs":[[0,"ece X în"],[1,"cepe în"],[0,"\n<p>...l"]],"start1":87,"start2":87,"length1":16,"length2":23}]],"length":499,"saved":false}
+{"ts":1367061068514,"patch":[[{"diffs":[[0,"ncepe în"],[1,"tot"],[0,"\n<p>...l"]],"start1":94,"start2":94,"length1":16,"length2":19}]],"length":502,"saved":false}
+{"ts":1367061070922,"patch":[[{"diffs":[[0,"pe întot"],[1,"deauna p"],[0,"\n<p>...l"]],"start1":97,"start2":97,"length1":16,"length2":24}]],"length":510,"saved":false}
+{"ts":1367061072887,"patch":[[{"diffs":[[0,"deauna p"],[1,"rumul, "],[0,"\n<p>...l"]],"start1":105,"start2":105,"length1":16,"length2":23}]],"length":517,"saved":false}
+{"ts":1367061075210,"patch":[[{"diffs":[[0,"prumul, "],[1,"numărul"],[0,"\n<p>...l"]],"start1":112,"start2":112,"length1":16,"length2":23}]],"length":524,"saved":false}
+{"ts":1367061079769,"patch":[[{"diffs":[[0,"eoarece "],[1,"„"],[0,"X începe"]],"start1":83,"start2":83,"length1":16,"length2":17}]],"length":525,"saved":false}
+{"ts":1367061081328,"patch":[[{"diffs":[[0,"arece „X"],[1,"”"],[0," începe "]],"start1":85,"start2":85,"length1":16,"length2":17}]],"length":526,"saved":false}
+{"ts":1367061086662,"patch":[[{"diffs":[[0," numărul"],[1," de "],[0,"\n<p>...l"]],"start1":121,"start2":121,"length1":16,"length2":20}]],"length":530,"saved":false}
+{"ts":1367061088750,"patch":[[{"diffs":[[0,"ărul de "],[1,"X-u"],[0,"\n<p>...l"]],"start1":125,"start2":125,"length1":16,"length2":19}]],"length":533,"saved":false}
+{"ts":1367061090752,"patch":[[{"diffs":[[0,"l de X-u"],[1,"ri "],[0,"\n<p>...l"]],"start1":128,"start2":128,"length1":16,"length2":19}]],"length":536,"saved":false}
+{"ts":1367061093159,"patch":[[{"diffs":[[0,"e X-uri "],[1,"va"],[0,"\n<p>...l"]],"start1":131,"start2":131,"length1":16,"length2":18}]],"length":538,"saved":false}
+{"ts":1367061096760,"patch":[[{"diffs":[[0,"eauna pr"],[-1,"u"],[1,"i"],[0,"mul, num"]],"start1":108,"start2":108,"length1":17,"length2":17}]],"length":538,"saved":false}
+{"ts":1367061105639,"patch":[[{"diffs":[[0,", nu"],[-1,"mărul de X-uri va"],[0,"\n<p>"]],"start1":120,"start2":120,"length1":25,"length2":8}]],"length":521,"saved":false}
+{"ts":1367061107268,"patch":[[{"diffs":[[0,"primul, "],[-1,"nu"],[0,"\n<p>...l"]],"start1":114,"start2":114,"length1":18,"length2":16}]],"length":519,"saved":false}
+{"ts":1367061109056,"patch":[[{"diffs":[[0,"primul, "],[1,"la fin"],[0,"\n<p>...l"]],"start1":114,"start2":114,"length1":16,"length2":22}]],"length":525,"saved":false}
+{"ts":1367061112558,"patch":[[{"diffs":[[0,", la fin"],[1,"alul orică"],[0,"\n<p>...l"]],"start1":120,"start2":120,"length1":16,"length2":26}]],"length":535,"saved":false}
+{"ts":1367061116303,"patch":[[{"diffs":[[0,"ul orică"],[1,"rui joc, nu"],[0,"\n<p>...l"]],"start1":130,"start2":130,"length1":16,"length2":27}]],"length":546,"saved":false}
+{"ts":1367061117541,"patch":[[{"diffs":[[0," joc, nu"],[1,"măru"],[0,"\n<p>...l"]],"start1":141,"start2":141,"length1":16,"length2":20}]],"length":550,"saved":false}
+{"ts":1367061120457,"patch":[[{"diffs":[[0,", număru"],[1,"l de "],[0,"\n<p>...l"]],"start1":145,"start2":145,"length1":16,"length2":21}]],"length":555,"saved":false}
+{"ts":1367061121882,"patch":[[{"diffs":[[0,"ărul de "],[1,"X-"],[0,"\n<p>...l"]],"start1":150,"start2":150,"length1":16,"length2":18}]],"length":557,"saved":false}
+{"ts":1367061122917,"patch":[[{"diffs":[[0,"ul de X-"],[1,"ur"],[0,"\n<p>...l"]],"start1":152,"start2":152,"length1":16,"length2":18}]],"length":559,"saved":false}
+{"ts":1367061124491,"patch":[[{"diffs":[[0," de X-ur"],[1,"i va"],[0,"\n<p>...l"]],"start1":154,"start2":154,"length1":16,"length2":20}]],"length":563,"saved":false}
+{"ts":1367061125680,"patch":[[{"diffs":[[0,"X-uri va"],[1," fi"],[0,"\n<p>...l"]],"start1":158,"start2":158,"length1":16,"length2":19}]],"length":566,"saved":false}
+{"ts":1367061127363,"patch":[[{"diffs":[[0,"i va fi\n"],[1,"\n"],[0,"<p>...lu"]],"start1":162,"start2":162,"length1":16,"length2":17}]],"length":567,"saved":false}
+{"ts":1367061132675,"patch":[[{"diffs":[[0,"i va fi\n"],[1,"întotdeauna mai "],[0,"\n<p>...l"]],"start1":162,"start2":162,"length1":16,"length2":32}]],"length":583,"saved":false}
+{"ts":1367061134659,"patch":[[{"diffs":[[0,"una mai "],[1,"mare dec"],[0,"\n<p>...l"]],"start1":178,"start2":178,"length1":16,"length2":24}]],"length":591,"saved":false}
+{"ts":1367061136304,"patch":[[{"diffs":[[0,"mare dec"],[1,"ât"],[0,"\n<p>...l"]],"start1":186,"start2":186,"length1":16,"length2":18}]],"length":593,"saved":false}
+{"ts":1367061138158,"patch":[[{"diffs":[[0,"re decât"],[1," număr"],[0,"\n<p>...l"]],"start1":188,"start2":188,"length1":16,"length2":22}]],"length":599,"saved":false}
+{"ts":1367061138939,"patch":[[{"diffs":[[0,"ât număr"],[1,"ul d"],[0,"\n<p>...l"]],"start1":194,"start2":194,"length1":16,"length2":20}]],"length":603,"saved":false}
+{"ts":1367061140274,"patch":[[{"diffs":[[0,"umărul d"],[1,"e "],[0,"\n<p>...l"]],"start1":198,"start2":198,"length1":16,"length2":18}]],"length":605,"saved":false}
+{"ts":1367061142971,"patch":[[{"diffs":[[0,"ărul de "],[1,"O-uri"],[0,"\n<p>...l"]],"start1":200,"start2":200,"length1":16,"length2":21}]],"length":610,"saved":false}
+{"ts":1367061149533,"patch":[[{"diffs":[[0,"de O-uri"],[1,"."],[0,"\n<p>...l"]],"start1":205,"start2":205,"length1":16,"length2":17}]],"length":611,"saved":false}
+{"ts":1367061158514,"patch":[[{"diffs":[[0,"tdeauna "],[1,"cu 1 "],[0,"mai mare"]],"start1":174,"start2":174,"length1":16,"length2":21}]],"length":616,"saved":false}
+{"ts":1367061188452,"patch":[[{"diffs":[[0,"de O-uri"],[-1,"."],[1,"?"],[0,"\n<p>...l"]],"start1":210,"start2":210,"length1":17,"length2":17}]],"length":616,"saved":false}
+{"ts":1367061267124,"patch":[[{"diffs":[[0," fi\n"],[-1,"întotdeauna cu 1 mai mare decât numărul de O-uri"],[1,"fi eg"],[0,"?\n<p"]],"start1":166,"start2":166,"length1":56,"length2":13}]],"length":573,"saved":false}
+{"ts":1367061267766,"patch":[[{"diffs":[[0,"fi\nfi eg"],[1,"al,"],[0,"?\n<p>..."]],"start1":167,"start2":167,"length1":16,"length2":19}]],"length":576,"saved":false}
+{"ts":1367061269118,"patch":[[{"diffs":[[0,"fi egal,"],[1," fie "],[0,"?\n<p>..."]],"start1":170,"start2":170,"length1":16,"length2":21}]],"length":581,"saved":false}
+{"ts":1367061271039,"patch":[[{"diffs":[[0,"al, fie "],[1,"cu 1 "],[0,"?\n<p>..."]],"start1":175,"start2":175,"length1":16,"length2":21}]],"length":586,"saved":false}
+{"ts":1367061275047,"patch":[[{"diffs":[[0,"ie cu 1 "],[1,"mai mare decâ"],[0,"?\n<p>..."]],"start1":180,"start2":180,"length1":16,"length2":29}]],"length":599,"saved":false}
+{"ts":1367061276121,"patch":[[{"diffs":[[0,"are decâ"],[1,"t num"],[0,"?\n<p>..."]],"start1":193,"start2":193,"length1":16,"length2":21}]],"length":604,"saved":false}
+{"ts":1367061278633,"patch":[[{"diffs":[[0,"ecât num"],[1,"ărul d"],[0,"?\n<p>..."]],"start1":198,"start2":198,"length1":16,"length2":22}]],"length":610,"saved":false}
+{"ts":1367061280016,"patch":[[{"diffs":[[0,"umărul d"],[1,"e "],[0,"?\n<p>..."]],"start1":204,"start2":204,"length1":16,"length2":18}]],"length":612,"saved":false}
+{"ts":1367061282705,"patch":[[{"diffs":[[0,"ărul de "],[1,"O-uri"],[0,"?\n<p>..."]],"start1":206,"start2":206,"length1":16,"length2":21}]],"length":617,"saved":false}
+{"ts":1367061297136,"patch":[[{"diffs":[[0,"va fi\nfi"],[1,"e"],[0," egal, f"]],"start1":164,"start2":164,"length1":16,"length2":17}]],"length":618,"saved":false}
+{"ts":1367061300000,"patch":[[{"diffs":[[0,"ri va fi"],[1," în"],[0,"\nfie ega"]],"start1":161,"start2":161,"length1":16,"length2":19}]],"length":621,"saved":false}
+{"ts":1367061301403,"patch":[[{"diffs":[[0,"va fi în"],[1,"totdeau"],[0,"\nfie ega"]],"start1":164,"start2":164,"length1":16,"length2":23}]],"length":628,"saved":false}
+{"ts":1367061303158,"patch":[[{"diffs":[[0,"ntotdeau"],[1,"na"],[0,"\nfie ega"]],"start1":171,"start2":171,"length1":16,"length2":18}]],"length":630,"saved":false}
+{"ts":1367062331999,"patch":[[{"diffs":[[0,"r></p>\n\n"],[1,"\n"],[0,"<p>...de"]],"start1":68,"start2":68,"length1":16,"length2":17}]],"length":631,"saved":false}
+{"ts":1367062337204,"patch":[[{"diffs":[[0,"r></p>\n\n"],[1,"..."],[0,"\n<p>...d"]],"start1":68,"start2":68,"length1":16,"length2":19}]],"length":634,"saved":false}
+{"ts":1367062349633,"patch":[[{"diffs":[[0,"/p>\n\n..."],[1,"în "],[0,"\n<p>...d"]],"start1":71,"start2":71,"length1":16,"length2":19}]],"length":637,"saved":false}
+{"ts":1367062352545,"patch":[[{"diffs":[[0,"\n\n...în "],[1,"limba engl"],[0,"\n<p>...d"]],"start1":74,"start2":74,"length1":16,"length2":26}]],"length":647,"saved":false}
+{"ts":1367062354358,"patch":[[{"diffs":[[0,"mba engl"],[1,"eză"],[0,"\n<p>...d"]],"start1":84,"start2":84,"length1":16,"length2":19}]],"length":650,"saved":false}
+{"ts":1367062364551,"patch":[[{"diffs":[[0," engleză"],[1,", jocul are "],[0,"\n<p>...d"]],"start1":87,"start2":87,"length1":16,"length2":28}]],"length":662,"saved":false}
+{"ts":1367062396414,"patch":[[{"diffs":[[0,", jocul "],[-1,"ar"],[1,"poartă numele d"],[0,"e \n<p>.."]],"start1":95,"start2":95,"length1":18,"length2":31}]],"length":675,"saved":false}
+{"ts":1367062398652,"patch":[[{"diffs":[[0,"mele de "],[1,"tic"],[0,"\n<p>...d"]],"start1":112,"start2":112,"length1":16,"length2":19}]],"length":678,"saved":false}
+{"ts":1367062399969,"patch":[[{"diffs":[[0,"e de tic"],[1,"-ta"],[0,"\n<p>...d"]],"start1":115,"start2":115,"length1":16,"length2":19}]],"length":681,"saved":false}
+{"ts":1367062402598,"patch":[[{"diffs":[[0,"e tic-ta"],[1,"c-toe"],[0,"\n<p>...d"]],"start1":118,"start2":118,"length1":16,"length2":21}]],"length":686,"saved":false}
+{"ts":1367062405308,"patch":[[{"diffs":[[0,"-tac-toe"],[1,", sau "],[0,"\n<p>...d"]],"start1":123,"start2":123,"length1":16,"length2":22}]],"length":692,"saved":false}
+{"ts":1367062407698,"patch":[[{"diffs":[[0,"oe, sau "],[1,"naught"],[0,"\n<p>...d"]],"start1":129,"start2":129,"length1":16,"length2":22}]],"length":698,"saved":false}
+{"ts":1367062409931,"patch":[[{"diffs":[[0,"u naught"],[1,"s and"],[0,"\n<p>...d"]],"start1":135,"start2":135,"length1":16,"length2":21}]],"length":703,"saved":false}
+{"ts":1367062412213,"patch":[[{"diffs":[[0,"ghts and"],[1," cros"],[0,"\n<p>...d"]],"start1":140,"start2":140,"length1":16,"length2":21}]],"length":708,"saved":false}
+{"ts":1367062413765,"patch":[[{"diffs":[[0,"and cros"],[1,"ses"],[0,"\n<p>...d"]],"start1":145,"start2":145,"length1":16,"length2":19}]],"length":711,"saved":false}
+{"ts":1367062416755,"patch":[[{"diffs":[[0," crosses"],[1,"”"],[0,"\n<p>...d"]],"start1":148,"start2":148,"length1":16,"length2":17}]],"length":712,"saved":false}
+{"ts":1367062420904,"patch":[[{"diffs":[[0,"oe, sau "],[1,"„"],[0,"naughts "]],"start1":129,"start2":129,"length1":16,"length2":17}]],"length":713,"saved":false}
+{"ts":1367062424400,"patch":[[{"diffs":[[0,"mele de "],[1,"„"],[0,"tic-tac-"]],"start1":112,"start2":112,"length1":16,"length2":17}]],"length":714,"saved":false}
+{"ts":1367062427301,"patch":[[{"diffs":[[0,"-tac-toe"],[1,"”"],[0,", sau „n"]],"start1":124,"start2":124,"length1":16,"length2":17}]],"length":715,"saved":false}
+{"ts":1367062432215,"patch":[[{"diffs":[[0,"crosses”"],[1," ("],[0,"\n<p>...d"]],"start1":152,"start2":152,"length1":16,"length2":18}]],"length":717,"saved":false}
+{"ts":1367062450136,"patch":[[{"diffs":[[0,"tac-toe”"],[1," (în A"],[0,", sau „n"]],"start1":125,"start2":125,"length1":16,"length2":22}]],"length":723,"saved":false}
+{"ts":1367062451982,"patch":[[{"diffs":[[0,"e” (în A"],[1,"me"],[0,", sau „n"]],"start1":131,"start2":131,"length1":16,"length2":18}]],"length":725,"saved":false}
+{"ts":1367062454576,"patch":[[{"diffs":[[0,"(în "],[-1,"Am"],[1,"Statel"],[0,"e, s"]],"start1":134,"start2":134,"length1":10,"length2":14}]],"length":729,"saved":false}
+{"ts":1367062457220,"patch":[[{"diffs":[[0," Statele"],[1," Unite "],[0,", sau „n"]],"start1":137,"start2":137,"length1":16,"length2":23}]],"length":736,"saved":false}
+{"ts":1367062460512,"patch":[[{"diffs":[[0,"e Unite "],[1,"ale Ame"],[0,", sau „n"]],"start1":144,"start2":144,"length1":16,"length2":23}]],"length":743,"saved":false}
+{"ts":1367062462362,"patch":[[{"diffs":[[0,"ale "],[-1,"Ame"],[0,", sa"]],"start1":152,"start2":152,"length1":11,"length2":8}]],"length":740,"saved":false}
+{"ts":1367062464208,"patch":[[{"diffs":[[0,"e Unite "],[-1,"ale "],[0,", sau „n"]],"start1":144,"start2":144,"length1":20,"length2":16}]],"length":736,"saved":false}
+{"ts":1367062467657,"patch":[[{"diffs":[[0,"e Unite "],[1,"sau "],[0,", sau „n"]],"start1":144,"start2":144,"length1":16,"length2":20}]],"length":740,"saved":false}
+{"ts":1367062471100,"patch":[[{"diffs":[[0,"ite sau "],[1,"în Canada)"],[0,", sau „n"]],"start1":148,"start2":148,"length1":16,"length2":26}]],"length":750,"saved":false}
+{"ts":1367062477947,"patch":[[{"diffs":[[0,"rosses” "],[1,"\n"],[0,"(\n<p>..."]],"start1":186,"start2":186,"length1":16,"length2":17}]],"length":751,"saved":false}
+{"ts":1367062480282,"patch":[[{"diffs":[[0,"sses” \n("],[1,"în "],[0,"\n<p>...d"]],"start1":188,"start2":188,"length1":16,"length2":19}]],"length":754,"saved":false}
+{"ts":1367062491294,"patch":[[{"diffs":[[0,"s” \n(în "],[1,"Marea Br"],[0,"\n<p>...d"]],"start1":191,"start2":191,"length1":16,"length2":24}]],"length":762,"saved":false}
+{"ts":1367062493620,"patch":[[{"diffs":[[0,"Marea Br"],[1,"itanie, "],[0,"\n<p>...d"]],"start1":199,"start2":199,"length1":16,"length2":24}]],"length":770,"saved":false}
+{"ts":1367062502197,"patch":[[{"diffs":[[0,"itanie, "],[1,"Australia, "],[0,"\n<p>...d"]],"start1":207,"start2":207,"length1":16,"length2":27}]],"length":781,"saved":false}
+{"ts":1367062507836,"patch":[[{"diffs":[[0,"tralia, "],[1,"Noa"],[0,"\n<p>...d"]],"start1":218,"start2":218,"length1":16,"length2":19}]],"length":784,"saved":false}
+{"ts":1367062509370,"patch":[[{"diffs":[[0,"alia, No"],[-1,"a"],[1,"ua "],[0,"\n<p>...d"]],"start1":220,"start2":220,"length1":17,"length2":19}]],"length":786,"saved":false}
+{"ts":1367062511694,"patch":[[{"diffs":[[0,"a, Noua "],[1,"Zeelandă "],[0,"\n<p>...d"]],"start1":223,"start2":223,"length1":16,"length2":25}]],"length":795,"saved":false}
+{"ts":1367062515403,"patch":[[{"diffs":[[0,"eelandă "],[1,"și Afri"],[0,"\n<p>...d"]],"start1":232,"start2":232,"length1":16,"length2":23}]],"length":802,"saved":false}
+{"ts":1367062518298,"patch":[[{"diffs":[[0," și Afri"],[1,"ca de Sud)"],[0,"\n<p>...d"]],"start1":239,"start2":239,"length1":16,"length2":26}]],"length":812,"saved":false}
+{"ts":1367062521750,"patch":[[{"diffs":[[0,"e Unite "],[-1,"sau"],[0," în Cana"]],"start1":144,"start2":144,"length1":19,"length2":16}]],"length":809,"saved":false}
+{"ts":1367062523458,"patch":[[{"diffs":[[0,"e Unite "],[1,"și"],[0," în Cana"]],"start1":144,"start2":144,"length1":16,"length2":18}]],"length":811,"saved":false}
+{"ts":1367062536617,"patch":[[{"diffs":[[0," de Sud)"],[1,"?"],[0,"\n<p>...d"]],"start1":248,"start2":248,"length1":16,"length2":17}]],"length":812,"saved":false}
+{"ts":1367062543812,"patch":[[{"diffs":[[0,"r></p>\n\n"],[1,"<p>"],[0,"...în li"]],"start1":68,"start2":68,"length1":16,"length2":19}]],"length":815,"saved":false}
+{"ts":1367062551865,"patch":[[{"diffs":[[0,"de Sud)?"],[1,"</p>"],[0,"\n<p>...d"]],"start1":252,"start2":252,"length1":16,"length2":20}]],"length":819,"saved":false}
+{"ts":1367062968711,"patch":[[{"diffs":[[0,"de Sud)?"],[1," "],[0,"</p>\n<p>"]],"start1":252,"start2":252,"length1":16,"length2":17}]],"length":820,"saved":false}
+{"ts":1367062970774,"patch":[[{"diffs":[[0,"e Sud)? "],[1,"}n"],[0,"</p>\n<p>"]],"start1":253,"start2":253,"length1":16,"length2":18}]],"length":822,"saved":false}
+{"ts":1367062972531,"patch":[[{"diffs":[[0,"d)? "],[-1,"}n"],[0,"</p>"]],"start1":257,"start2":257,"length1":10,"length2":8}]],"length":820,"saved":false}
+{"ts":1367062976827,"patch":[[{"diffs":[[0,"e Sud)? "],[1,"în a"],[0,"</p>\n<p>"]],"start1":253,"start2":253,"length1":16,"length2":20}]],"length":824,"saved":false}
+{"ts":1367062978455,"patch":[[{"diffs":[[0,"d)? în a"],[1,"lte "],[0,"</p>\n<p>"]],"start1":257,"start2":257,"length1":16,"length2":20}]],"length":828,"saved":false}
+{"ts":1367062979410,"patch":[[{"diffs":[[0,"în alte "],[1,"ț"],[0,"</p>\n<p>"]],"start1":261,"start2":261,"length1":16,"length2":17}]],"length":829,"saved":false}
+{"ts":1367062981106,"patch":[[{"diffs":[[0,"n alte ț"],[1,"ări"],[0,"</p>\n<p>"]],"start1":262,"start2":262,"length1":16,"length2":19}]],"length":832,"saved":false}
+{"ts":1367062983683,"patch":[[{"diffs":[[0,"lte țări"],[1," poate fi "],[0,"</p>\n<p>"]],"start1":265,"start2":265,"length1":16,"length2":26}]],"length":842,"saved":false}
+{"ts":1367062987341,"patch":[[{"diffs":[[0,"oate fi "],[1,"găsit \n"],[0,"</p>\n<p>"]],"start1":275,"start2":275,"length1":16,"length2":23}]],"length":849,"saved":false}
+{"ts":1367062988311,"patch":[[{"diffs":[[0," găsit \n"],[1,"s"],[0,"</p>\n<p>"]],"start1":282,"start2":282,"length1":16,"length2":17}]],"length":850,"saved":false}
+{"ts":1367062991997,"patch":[[{"diffs":[[0,"găsit \ns"],[1,"ub numele de "],[0,"</p>\n<p>"]],"start1":283,"start2":283,"length1":16,"length2":29}]],"length":863,"saved":false}
+{"ts":1367063114627,"patch":[[{"diffs":[[0,"e Sud)? "],[-1,"î"],[1,"Î"],[0,"n alte ț"]],"start1":253,"start2":253,"length1":17,"length2":17},{"diffs":[[0,"mele de "],[1,"„ta-te-ti”, „exy-ozys” sau „O-X”"],[0,"</p>\n<p>"]],"start1":296,"start2":296,"length1":16,"length2":48}]],"length":895,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1367063144438,"patch":[[{"diffs":[[0,"au „O-X”"],[1,"."],[0,"</p>\n<p>"]],"start1":328,"start2":328,"length1":16,"length2":17}]],"length":896,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1367173618032,"patch":[[{"diffs":[[0,"alitate.</p>"],[1,"\n<img src=\"http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/romaf_zpsc7b932c0.png\" id=\"isto\"></img>"]],"start1":884,"start2":884,"length1":12,"length2":128}]],"length":1012,"saved":false}
+{"ts":1367173622233,"patch":[[{"diffs":[[0,"png\""],[-1," id=\"isto\""],[0,"></i"]],"start1":991,"start2":991,"length1":18,"length2":8}]],"length":1002,"saved":false}
+{"ts":1367173644884,"patch":[[{"diffs":[[0,"ect/"],[-1,"romaf_zpsc7b932c0"],[1,"didyoukno_zps36967071"],[0,".png"]],"start1":969,"start2":969,"length1":25,"length2":29}]],"length":1006,"saved":false}
+{"ts":1367173659792,"patch":[[{"diffs":[[0,"071.png\""],[1," id"],[0,"></img>"]],"start1":991,"start2":991,"length1":15,"length2":18}]],"length":1009,"saved":false}
+{"ts":1367173662160,"patch":[[{"diffs":[[0,".png\" id"],[1,"="],[0,"></img>"]],"start1":994,"start2":994,"length1":15,"length2":16}]],"length":1010,"saved":false}
+{"ts":1367173664442,"patch":[[{"diffs":[[0,"png\" id="],[1,"\"isto"],[0,"></img>"]],"start1":995,"start2":995,"length1":15,"length2":20}]],"length":1015,"saved":false}
+{"ts":1367173665617,"patch":[[{"diffs":[[0,"id=\"isto"],[1,"\""],[0,"></img>"]],"start1":1000,"start2":1000,"length1":15,"length2":16}]],"length":1016,"saved":false}
+{"ts":1367173679433,"patch":[[{"diffs":[[0,"id=\""],[1,"d"],[0,"i"],[-1,"sto"],[0,"\"></"]],"start1":1000,"start2":1000,"length1":12,"length2":10}]],"length":1014,"saved":false}
+{"ts":1367173681386,"patch":[[{"diffs":[[0,"\" id=\"di"],[1,"dukn"],[0,"\"></img>"]],"start1":998,"start2":998,"length1":16,"length2":20}]],"length":1018,"saved":false}
+{"ts":1367173683099,"patch":[[{"diffs":[[0,"=\"didukn"],[1,"o"],[0,"\"></img>"]],"start1":1002,"start2":1002,"length1":16,"length2":17}]],"length":1019,"saved":false}

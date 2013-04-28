@@ -1,0 +1,55 @@
+{"ts":1367057015685,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1367057044134,"patch":[[{"diffs":[[1,"<p><b>Istorie</b><br></p>\n<p>Nu există foarte multe date istorice despre acest joc, dar se presupune că jocul X și O își are originile în Antichitate, fiind adesea jucat de către cetățenii Imperiului Roman in jurul \nsecolului I i.Hr. Pe atunci, jocul purta numele de ”Terni Lapilli” și principala diferență dintre acest joc și versiunea zilelor \nnoastră este faptul că jucătorii aveau la dispoziție numai câte trei piese pe care le puteau muta în spațiile libere. De asemenea, s-a \nformulat și afirmația conform căreia jocul X și O își are originile în Egiptul antic. </p>\n<p>În anul 1952 apare prima versiune computerizată a acestui joc, versiune care poartă numele de ”OXO”.</p>\n"]],"start1":0,"start2":0,"length1":0,"length2":681}]],"length":681,"saved":false}
+{"ts":1367057172609,"patch":[[{"diffs":[[1,"<%- gButton \"/\", \"Înapoi\", \"back\" %>\n"],[0,"<p><b>Is"]],"start1":0,"start2":0,"length1":8,"length2":45}]],"length":718,"saved":false}
+{"ts":1367057339100,"patch":[[{"diffs":[[0,"utton \"/"],[1,"bonus"],[0,"\", \"Înap"]],"start1":6,"start2":6,"length1":16,"length2":21}]],"length":723,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1367071042504,"patch":[[{"diffs":[[0," ”OXO”.</p>\n"],[1,"În \n"]],"start1":711,"start2":711,"length1":12,"length2":16}]],"length":727,"saved":false}
+{"ts":1367071051032,"patch":[[{"diffs":[[0,"</p>\nÎn "],[1,"1975, stude"],[0,"\n"]],"start1":718,"start2":718,"length1":9,"length2":20}]],"length":738,"saved":false}
+{"ts":1367071054779,"patch":[[{"diffs":[[0,"5, stude"],[1,"nții de la "],[0,"\n"]],"start1":729,"start2":729,"length1":9,"length2":20}]],"length":749,"saved":false}
+{"ts":1367071058473,"patch":[[{"diffs":[[0,"i de la "],[1,"MIT "],[0,"\n"]],"start1":740,"start2":740,"length1":9,"length2":13}]],"length":753,"saved":false}
+{"ts":1367071076213,"patch":[[{"diffs":[[0," la MIT "],[1,"au folosit acest joc pentru a demonstra putere"],[0,"\n"]],"start1":744,"start2":744,"length1":9,"length2":55}]],"length":799,"saved":false}
+{"ts":1367071081098,"patch":[[{"diffs":[[0,"a putere"],[1,"a "],[0,"\n"]],"start1":790,"start2":790,"length1":9,"length2":11}]],"length":801,"saved":false}
+{"ts":1367071102091,"patch":[[{"diffs":[[0,"puterea "],[1,"de calcul"],[0,"\n"]],"start1":792,"start2":792,"length1":9,"length2":18}]],"length":810,"saved":false}
+{"ts":1367071131037,"patch":[[{"diffs":[[0,"monstra "],[-1,"puter"],[1,"capacitat"],[0,"ea de ca"]],"start1":784,"start2":784,"length1":21,"length2":25}]],"length":814,"saved":false}
+{"ts":1367071159307,"patch":[[{"diffs":[[0,"u a "],[-1,"demonstr"],[1,"arăt"],[0,"a ca"]],"start1":778,"start2":778,"length1":16,"length2":12},{"diffs":[[0,"e calcul"],[1," a "],[0,"\n"]],"start1":801,"start2":801,"length1":9,"length2":12}]],"length":813,"saved":false}
+{"ts":1367071179629,"patch":[[{"diffs":[[0,"alcul a "],[1,"calculatorului Tin"],[0,"\n"]],"start1":804,"start2":804,"length1":9,"length2":27}]],"length":831,"saved":false}
+{"ts":1367071185941,"patch":[[{"diffs":[[0,"ului Tin"],[1,"kertoy, "],[0,"\n"]],"start1":822,"start2":822,"length1":9,"length2":17}]],"length":839,"saved":false}
+{"ts":1367071201468,"patch":[[{"diffs":[[0,"kertoy, "],[1,"ce poate fi găsit, în pre"],[0,"\n"]],"start1":830,"start2":830,"length1":9,"length2":34}]],"length":864,"saved":false}
+{"ts":1367071205135,"patch":[[{"diffs":[[0,", în pre"],[1,"zent "],[0,"\n"]],"start1":855,"start2":855,"length1":9,"length2":14}]],"length":869,"saved":false}
+{"ts":1367071211325,"patch":[[{"diffs":[[0," găsit, "],[1,"\n"],[0,"în preze"]],"start1":849,"start2":849,"length1":16,"length2":17}]],"length":870,"saved":false}
+{"ts":1367071221577,"patch":[[{"diffs":[[0,"prezent "],[1,"la Muzeul de Șt"],[0,"\n"]],"start1":861,"start2":861,"length1":9,"length2":24}]],"length":885,"saved":false}
+{"ts":1367071223352,"patch":[[{"diffs":[[0,"ul de Șt"],[1,"iință"],[0,"\n"]],"start1":876,"start2":876,"length1":9,"length2":14}]],"length":890,"saved":false}
+{"ts":1367071231504,"patch":[[{"diffs":[[0," Știință"],[1,", Boston."],[0,"\n"]],"start1":881,"start2":881,"length1":9,"length2":18}]],"length":899,"saved":false}
+{"ts":1367071235481,"patch":[[{"diffs":[[0,"O”.</p>\n"],[1,"<p>"],[0,"În 1975,"]],"start1":715,"start2":715,"length1":16,"length2":19}]],"length":902,"saved":false}
+{"ts":1367071237451,"patch":[[{"diffs":[[0," Boston."],[1,"<p"],[0,"\n"]],"start1":893,"start2":893,"length1":9,"length2":11}]],"length":904,"saved":false}
+{"ts":1367071242337,"patch":[[{"diffs":[[0,"oston.<p"],[1,">"],[0,"\n"]],"start1":895,"start2":895,"length1":9,"length2":10}]],"length":905,"saved":false}
+{"ts":1367071450996,"patch":[[{"diffs":[[0,"atea de "],[-1,"calcul"],[1,"procesare"],[0," a calcu"]],"start1":798,"start2":798,"length1":22,"length2":25}]],"length":908,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1367163011856,"patch":[[{"diffs":[[0,"ton.<p>\n"],[1,"<img src"]],"start1":900,"start2":900,"length1":8,"length2":16}]],"length":916,"saved":false}
+{"ts":1367163013330,"patch":[[{"diffs":[[0,"<img src"],[1,"=\"\""]],"start1":908,"start2":908,"length1":8,"length2":11}]],"length":919,"saved":false}
+{"ts":1367163030612,"patch":[[{"diffs":[[0,"mg src=\""],[1,"http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/romaf_zpsc7b932c0.png"],[0,"\""]],"start1":910,"start2":910,"length1":9,"length2":96}]],"length":1006,"saved":false}
+{"ts":1367163032545,"patch":[[{"diffs":[[0,"2c0.png\""],[1,"><"]],"start1":998,"start2":998,"length1":8,"length2":10}]],"length":1008,"saved":false}
+{"ts":1367163034078,"patch":[[{"diffs":[[0,"0.png\"><"],[1,"/img"]],"start1":1000,"start2":1000,"length1":8,"length2":12}]],"length":1012,"saved":false}
+{"ts":1367163037194,"patch":[[{"diffs":[[0,"g\"></img"],[1,">"]],"start1":1004,"start2":1004,"length1":8,"length2":9}]],"length":1013,"saved":false}
+{"ts":1367163039892,"patch":[[{"diffs":[[0,"\"></img>"],[1,"\n"]],"start1":1005,"start2":1005,"length1":8,"length2":9}]],"length":1014,"saved":false}
+{"ts":1367163045460,"patch":[[{"diffs":[[0,"></img>\n"],[1,"<img src=\"http://i701.photobucket.com/albums/ww15/silver_993/xsio%20Project/romaf_zpsc7b932c0.png\"></img>\n"]],"start1":1006,"start2":1006,"length1":8,"length2":114}]],"length":1120,"saved":false}
+{"ts":1367163062595,"patch":[[{"diffs":[[0,"Project/"],[-1,"romaf_zpsc7b932c0"],[1,"egiptf_zpsf2ace0ae"],[0,".png\"></"]],"start1":1082,"start2":1082,"length1":33,"length2":34}]],"length":1121,"saved":false}
+{"ts":1367163129253,"patch":[[{"diffs":[[0,"7b932c0.png\""],[1," id="],[0,"></img>\n<img"]],"start1":994,"start2":994,"length1":24,"length2":28}]],"length":1125,"saved":false}
+{"ts":1367163131439,"patch":[[{"diffs":[[0,"png\" id="],[1,"\""],[0,"></img>\n"]],"start1":1002,"start2":1002,"length1":16,"length2":17}]],"length":1126,"saved":false}
+{"ts":1367163136495,"patch":[[{"diffs":[[0,"ng\" id=\""],[1,"isto\""],[0,"></img>\n"]],"start1":1003,"start2":1003,"length1":16,"length2":21}]],"length":1131,"saved":false}
+{"ts":1367163140648,"patch":[[{"diffs":[[0,"0ae.png\""],[1," id"],[0,"></img>\n"]],"start1":1115,"start2":1115,"length1":16,"length2":19}]],"length":1134,"saved":false}
+{"ts":1367163143055,"patch":[[{"diffs":[[0,".png\" id"],[1,"=\""],[0,"></img>\n"]],"start1":1118,"start2":1118,"length1":16,"length2":18}]],"length":1136,"saved":false}
+{"ts":1367163145212,"patch":[[{"diffs":[[0,"ng\" id=\""],[1,"isto\""],[0,"></img>\n"]],"start1":1120,"start2":1120,"length1":16,"length2":21}]],"length":1141,"saved":false}
+{"ts":1367167331792,"patch":[[{"diffs":[[0," X și O "],[-1,"își are originile"],[1,"ar fi"],[0," în Egip"]],"start1":566,"start2":566,"length1":33,"length2":21}]],"length":1129,"saved":false}
+{"ts":1367167332958,"patch":[[{"diffs":[[0,"O ar fi "],[1,"fost "],[0,"în Egipt"]],"start1":572,"start2":572,"length1":16,"length2":21}]],"length":1134,"saved":false}
+{"ts":1367167334182,"patch":[[{"diffs":[[0,"fi fost "],[1," "],[0,"în Egipt"]],"start1":577,"start2":577,"length1":16,"length2":17}]],"length":1135,"saved":false}
+{"ts":1367167338337,"patch":[[{"diffs":[[0," fi fost"],[-1," "],[1,", d"],[0," în Egip"]],"start1":576,"start2":576,"length1":17,"length2":19}]],"length":1137,"saved":false}
+{"ts":1367167340653,"patch":[[{"diffs":[[0," fost, d"],[1,"e fapt"],[0," în Egip"]],"start1":579,"start2":579,"length1":16,"length2":22}]],"length":1143,"saved":false}
+{"ts":1367167354818,"patch":[[{"diffs":[[0," căreia "],[1,"origine"],[0,"jocul X "]],"start1":553,"start2":553,"length1":16,"length2":23}]],"length":1150,"saved":false}
+{"ts":1367167356820,"patch":[[{"diffs":[[0,"a origin"],[-1,"e"],[1,"il"],[0,"jocul X "]],"start1":559,"start2":559,"length1":17,"length2":18}]],"length":1151,"saved":false}
+{"ts":1367167358499,"patch":[[{"diffs":[[0,"originil"],[1,"e "],[0,"jocul X "]],"start1":561,"start2":561,"length1":16,"length2":18}]],"length":1153,"saved":false}
+{"ts":1367167361058,"patch":[[{"diffs":[[0,"ginile jocul"],[1,"ui"],[0," X și O ar f"]],"start1":564,"start2":564,"length1":24,"length2":26}]],"length":1155,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1367174049727,"patch":[[{"diffs":[[0,"0.png\" id=\"isto\""],[1,"wi"],[0,"></img>\n<img src"]],"start1":1014,"start2":1014,"length1":32,"length2":34}]],"length":1157,"saved":false}
+{"ts":1367174052023,"patch":[[{"diffs":[[0,"\"isto\"wi"],[1,"dth="],[0,"></img>\n"]],"start1":1024,"start2":1024,"length1":16,"length2":20}]],"length":1161,"saved":false}
+{"ts":1367174053793,"patch":[[{"diffs":[[0,"o\"width="],[1,"\"200"],[0,"></img>\n"]],"start1":1028,"start2":1028,"length1":16,"length2":20}]],"length":1165,"saved":false}
+{"ts":1367174056422,"patch":[[{"diffs":[[0,"dth=\"200"],[1,"\""],[0,"></img>\n"]],"start1":1032,"start2":1032,"length1":16,"length2":17}]],"length":1166,"saved":false}
+{"ts":1367174057776,"patch":[[{"diffs":[[0,"d=\"isto\""],[1," "],[0,"width=\"2"]],"start1":1022,"start2":1022,"length1":16,"length2":17}]],"length":1167,"saved":false}
+{"ts":1367174065519,"patch":[[{"diffs":[[0,"d=\"isto\""],[1," width=\"200\""],[0,"></img>\n"]],"start1":1151,"start2":1151,"length1":16,"length2":28}]],"length":1179,"saved":false}
